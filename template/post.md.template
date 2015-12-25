@@ -1,0 +1,15 @@
+---
+layout: news
+title: "Release ES2016 Draft 2015-12-20 · tc39/ecma262"
+url: https://github.com/tc39/ecma262/releases/tag/es2016-draft-20151220
+date: 2015-12-21T18:12
+related:
+  - 
+    title: "ECMAScript® 2016 Language Specification"
+    url: "https://tc39.github.io/ecma262/"
+tags:
+  - "ECMAScript"
+  - "ReleaseNote"
+---
+
+*A description.*

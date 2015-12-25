@@ -1,21 +1,26 @@
 <div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  <h1><a href="{{page.item-url}}">{{ page.title }}</a> {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  <p class="item-url"><a href="{{page.item-url}}" title="{{ page.title }}">{{page.item-url}}</a></p>
 </div>
 
 <div class="row post-full">
   <div class="col-xs-12">
+
     <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
+      <span>Post Date: {{ page.date | date_to_xmlschema }}</span>
     </div>
     <div class="content">
-      {{ page.description }}
+      {{ content }}
+      {% unless page.related == empty %}
       <div class="content-related">
+        <h3>Related Link</h3>
         <ul>
           {% for related in page.related %}
           <li><a href="{{ related.url }}">{{related.title}}</a></li>
           {% endfor %}
         </ul>
       </div>
+      {% endunless %}
     </div>
 
   {% unless page.categories == empty %}

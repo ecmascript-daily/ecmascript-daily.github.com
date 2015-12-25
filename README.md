@@ -16,7 +16,7 @@ Daily news of ECMAScript.
 | Property | Required | Description |
 |----------|----------|-------------|
 | title | ✓ | page's title |
-| url | ✓ | URL to page |
+| item-url | ✓ | URL to page |
 | date | ✓ | `YYYY-MM-DD HH:MM:SS +/-TTTT` |
 | description | ✓ | Short descriptive summary in a few sentence |
 | related |  | related page list |

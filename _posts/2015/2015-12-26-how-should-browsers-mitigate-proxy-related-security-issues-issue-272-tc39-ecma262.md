@@ -18,6 +18,7 @@ TC39 discuss about potential security issue of ES6 Proxy.
 > There's a security issue on the web with ES2015 Proxies where a cross-origin request can be made to load some ECMAScript code, and this request can leak some information across origins due to the existence of Proxies. 
 
 POC on Chrome:
+
 ```js
 window.__proto__ = Proxy.create({
     get: function(target, name) {console.log("data=" + name)}

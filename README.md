@@ -1,4 +1,4 @@
-# ECMAScript Daily 
+# ECMAScript Daily [![Build Status](https://travis-ci.org/ecmascript-daily/ecmascript-daily.github.com.svg?branch=master)](https://travis-ci.org/ecmascript-daily/ecmascript-daily.github.com)
 
 Daily news of ECMAScript.
 

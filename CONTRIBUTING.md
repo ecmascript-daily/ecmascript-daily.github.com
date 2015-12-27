@@ -1,4 +1,12 @@
-# Contributing Guide Line
+---
+layout: page
+title: Contributing
+tagline: How To Contribute
+header : Contributing
+group: navigation
+---
+
+# Contributing Guideline
 
 ## How to fix post?
 
@@ -31,7 +39,6 @@ Shortcut:
 | description | ✓ | Short descriptive summary in a few sentence |
 | related |  | related page list |
 | tags |  | tag list |
-
 
 ### Preview ECMAScript Daily Locally
 

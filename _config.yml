@@ -122,7 +122,7 @@ JB :
     provider : google
     gauges :
         site_id : 'SITE ID'
-    google : 
+    google :
         tracking_id : 'UA-2184335-17'
     getclicky :
       site_id : 

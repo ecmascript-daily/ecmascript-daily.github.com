@@ -123,7 +123,7 @@ JB :
     gauges :
         site_id : 'SITE ID'
     google : 
-        tracking_id : ''
+        tracking_id : 'UA-2184335-17'
     getclicky :
       site_id : 
     mixpanel :

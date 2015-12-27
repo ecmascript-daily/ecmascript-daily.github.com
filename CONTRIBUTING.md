@@ -31,3 +31,18 @@ Shortcut:
 | description | ✓ | Short descriptive summary in a few sentence |
 | related |  | related page list |
 | tags |  | tag list |
+
+
+### Preview ECMAScript Daily Locally
+
+This site is built using jekyll.
+To preview on your local machine, clone this repository and run
+
+```sh
+git clone https://github.com/ecmascript-daily/ecmascript-daily.github.com.git
+cd ecmascript-daily.github.com
+# if you not installed bundle, please do `gem install bundle`
+bundle install
+bundle exec jekyll serve
+# open http://0.0.0.0:4000/
+```

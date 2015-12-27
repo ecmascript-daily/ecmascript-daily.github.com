@@ -1,0 +1,14 @@
+@import "color-var";
+
+body {
+  background-color: $base-color;
+}
+
+.main .container {
+  margin-bottom: 2em;
+  padding: 0 2em 2em 2em;
+}
+
+.container {
+  background-color: $main-color;
+}

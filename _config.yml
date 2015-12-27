@@ -9,7 +9,7 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : ECMAScript Daily
-tagline: ECMAScript daily news
+tagline: ECMAScript Daily News
 author :
   name : azu
   email : azuciao@gmail.com

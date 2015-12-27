@@ -1,14 +1,13 @@
-<div class="page-header">
+<div class="post-article-meta">
+  <i class="glyphicon glyphicon-time"></i><span class="post-article-meta-date">{{ page.date | date_to_string }}</span>
+</div>
+<div class="post-article-header">
   <h1><a href="{{page.item-url}}">{{ page.title }}</a> {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
   <p class="item-url"><a href="{{page.item-url}}" title="{{ page.title }}">{{page.item-url}}</a></p>
 </div>
 
 <div class="row post-full">
   <div class="col-xs-12">
-
-    <div class="date">
-      <span>Post Date: {{ page.date | date_to_xmlschema }}</span>
-    </div>
     <div class="content">
       {{ content }}
       {% if page.related %}

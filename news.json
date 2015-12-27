@@ -1,0 +1,11 @@
+---
+---
+[{% for post in site.posts %}{% if post.layout == "news" %}{
+"title":"{{ post.title | xml_escape }}",
+"url":"{{ post.url | prepend: site.production_url }}",
+"item-url":"{{ page.item-url }}",
+"date":"{{ post.date | date_to_xmlschema }}",
+"content":"{{ post.content | markdownify | strip_html | strip_newlines | xml_escape }}",
+"tags":[{% for tag in post.tags %}"{{ tag }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
+"related":[{% for related in post.related %}{ "title": "{{ related.title | xml_escape }}", "url": "{{ related.url }}"}{% if forloop.last %}{% else %},{% endif %}{% endfor %}]
+}{% if forloop.last %}{% else %},{% endif %}{% endif %}{% endfor %}]

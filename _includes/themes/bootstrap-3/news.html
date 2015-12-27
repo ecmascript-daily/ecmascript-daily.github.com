@@ -11,16 +11,18 @@
     </div>
     <div class="content">
       {{ content }}
-      {% unless page.related == empty %}
-      <div class="content-related">
-        <h3>Related Link</h3>
-        <ul>
-          {% for related in page.related %}
-          <li><a href="{{ related.url }}">{{related.title}}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endunless %}
+      {% if page.related %}
+        {% unless page.related == empty %}
+        <div class="content-related">
+          <h3>Related Link</h3>
+          <ul>
+            {% for related in page.related %}
+            <li><a href="{{ related.url }}">{{related.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endunless %}
+      {% endif %}
     </div>
 
   {% unless page.categories == empty %}

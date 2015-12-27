@@ -4,6 +4,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', {{ site.JB.analytics.tracking_id }}', {% if site.JB.analytics.googleUA.property_name %}{{ site.JB.analytics.googleUA.property_name }}{% else %}'auto'{% endif %});
+  ga('create', 'UA-2184335-17', 'auto');
   ga('send', 'pageview');
+
 </script>

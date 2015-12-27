@@ -1,10 +1,12 @@
 # ECMAScript Daily [![Build Status](https://travis-ci.org/ecmascript-daily/ecmascript-daily.github.com.svg?branch=master)](https://travis-ci.org/ecmascript-daily/ecmascript-daily.github.com)
 
-Daily news of ECMAScript.
+Daily news blog about ECMAScript.
 
-## Contributing
+## [Contributing](./CONTRIBUTING.md)
 
-### How to add news?
+Please see [Contributing Guideline](./CONTRIBUTING.md)
+
+### How to add News?
 
 1. Create a new file in [_posts/](https://github.com/ecmascript-daily/ecmascript-daily.github.com/tree/master/_posts)`<year>`
 2. File name should be `<year>-<month>-<day>-<title>.md`

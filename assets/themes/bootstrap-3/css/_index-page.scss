@@ -16,10 +16,14 @@
   }
   .post-article-meta-date {
     padding: 1em 1em 0.3em 0.5em;
+    margin-right: 0.5em;
     border-right: 1px solid $dark-base-color;
   }
-  .post-article-meta-date a {
+  .post-article-meta-date a, .post-article-meta-edit a {
     color: $dark-base-color;
+  }
+  .post-article-meta-edit {
+    padding: 1em 1em 0.3em 0.5em;
   }
 }
 

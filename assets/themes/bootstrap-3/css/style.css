@@ -10,9 +10,12 @@
   padding-top: 1em; }
 .post-article-meta .post-article-meta-date {
   padding: 1em 1em 0.3em 0.5em;
+  margin-right: 0.5em;
   border-right: 1px solid #f4aa03; }
-.post-article-meta .post-article-meta-date a {
+.post-article-meta .post-article-meta-date a, .post-article-meta .post-article-meta-edit a {
   color: #f4aa03; }
+.post-article-meta .post-article-meta-edit {
+  padding: 1em 1em 0.3em 0.5em; }
 
 .post-article-title {
   font-size: 2.5em;

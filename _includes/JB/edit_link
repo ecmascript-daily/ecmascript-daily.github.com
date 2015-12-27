@@ -1,0 +1,1 @@
+<a class="edit-on-github" href="https://github.com/ecmascript-daily/ecmascript-daily.github.com/edit/master/{{page.path | uri_escape}}"><span class="edit-on-github-label"></span>Edit on GitHub</a>

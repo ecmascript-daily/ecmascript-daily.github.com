@@ -1,5 +1,6 @@
 <div class="post-article-meta">
   <i class="glyphicon glyphicon-time"></i><span class="post-article-meta-date"><a href="{{page.url}}">{{ page.date | date_to_string }}</a></span>
+  <i class="glyphicon glyphicon-edit"></i><span class="post-article-meta-edit">{% include JB/edit_link %}</span>
 </div>
 <div class="post-article-header">
   <h1><a href="{{page.item-url}}">{{ page.title }}</a> {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>

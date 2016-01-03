@@ -3,8 +3,8 @@
   <i class="glyphicon glyphicon-edit"></i><span class="post-article-meta-edit">{% include JB/edit_link %}</span>
 </div>
 <div class="post-article-header">
-  <h1><a href="{{page.item-url}}">{{ page.title }}</a> {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
-  <p class="item-url"><a href="{{page.item-url}}" title="{{ page.title }}">{{page.item-url}}</a></p>
+  <h1><a href="{{page.item-url}}">{{ page.title | markdownify | strip_html | trim }}</a> {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+  <p class="item-url"><a href="{{page.item-url}}" title="{{ page.title | markdownify | strip_html | trim }}">{{page.item-url}}</a></p>
 </div>
 
 <div class="row post-full">
@@ -17,7 +17,7 @@
           <h3>Related Link</h3>
           <ul>
             {% for related in page.related %}
-            <li><a href="{{ related.url }}">{{related.title}}</a></li>
+            <li><a href="{{ related.url }}">{{related.title | markdownify | strip_html | trim }}</a></li>
             {% endfor %}
           </ul>
         </div>
@@ -44,13 +44,13 @@
     <hr>
     <ul class="pagination">
     {% if page.previous %}
-      <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
+      <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title | markdownify | strip_html | trim }}">&laquo; Previous</a></li>
     {% else %}
       <li class="prev disabled"><a>&larr; Previous</a></li>
     {% endif %}
       <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
     {% if page.next %}
-      <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
+      <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title | markdownify | strip_html | trim }}">Next &raquo;</a></li>
     {% else %}
       <li class="next disabled"><a>Next &rarr;</a>
     {% endif %}

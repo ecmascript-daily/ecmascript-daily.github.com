@@ -29,7 +29,7 @@ tagline: ECMAScript Daily News
             <i class="glyphicon glyphicon-time"></i><span class="post-article-meta-date">{{ post.date | date_to_string }}</span>
         </div>
         <div class="post-article-header">
-            <h2 class="post-article-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="post-article-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | markdownify | strip_html | trim }}</a></h2>
         </div>
     </article>
     {% endfor %}

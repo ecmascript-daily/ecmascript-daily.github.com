@@ -1,6 +1,6 @@
 ---
 layout: news
-title: 'Brian Terlson on Twitter: "Exponentiation operator is in for ES2016! Congrats @rwaldron, `awesome ** 2`!"'
+title: 'Exponentiation operator is in for ES2016'
 item-url: 'https://twitter.com/bterlson/status/692795335891099648'
 date: '2016-01-28T23:32:13+00:00'
 tags:

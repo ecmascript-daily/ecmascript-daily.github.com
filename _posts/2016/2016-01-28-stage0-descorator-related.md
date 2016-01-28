@@ -1,6 +1,6 @@
 ---
 layout: news
-title: 'New Decorators proposal'
+title: 'New decorators proposal'
 item-url: 'https://github.com/tc39/ecma262/pull/323'
 date: '2016-01-28T03:27:40+00:00'
 tags:

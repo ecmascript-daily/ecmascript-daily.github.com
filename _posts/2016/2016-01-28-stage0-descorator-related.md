@@ -6,6 +6,8 @@ date: '2016-01-28T03:27:40+00:00'
 tags:
   - ECMAScript
   - proposal
+  - Decorators
+
 ---
 New two proposals are written by Angular Team and Yehuda Katz.
 

@@ -18,4 +18,4 @@ These proposals are builds on top of the "[Class and property decorators](https:
 - [stage0.md: add Function Expression Decorators proposal by IgorMinar · Pull Request #324 · tc39/ecma262](https://github.com/tc39/ecma262/pull/324)
 - [Function Expression Decorators](https://docs.google.com/document/d/1ikxIP5-RVYq6d_f8lAvf3pKC00W78ueyp-xIZ6q67uU/edit#)
 
-Both proposals currently at Stage 0.
+Currently at Stage 0.

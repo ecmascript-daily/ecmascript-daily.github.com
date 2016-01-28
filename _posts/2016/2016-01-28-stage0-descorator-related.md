@@ -1,6 +1,6 @@
 ---
 layout: news
-title: 'stage0.md: add Method Parameter Decorators proposal by IgorMinar · Pull Request #323 · tc39/ecma262'
+title: 'New Decorators proposal'
 item-url: 'https://github.com/tc39/ecma262/pull/323'
 date: '2016-01-28T03:27:40+00:00'
 tags:

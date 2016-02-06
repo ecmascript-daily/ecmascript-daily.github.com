@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{% if page.title == "ECMAScript Daily" %}{{ site.title }}{% else %}{{ page.title | markdownify | strip_html | trim }} | {{ site.title }}{% endif %}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    {% endif %}
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="author" content="{{ site.author.name }}">
 
     <!-- Enable responsive viewport -->
@@ -32,13 +30,8 @@
 
 
     <link rel="shortcut icon" href="{{ ASSET_PATH }}/icon.png">
-    <!-- Fav and touch icons -->
-    <!-- Update these with your own images
-      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    -->
 
+    {% include JB/ogp %}
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate"
           title="Sitewide ATOM Feed">

@@ -19,12 +19,14 @@ highlighter: rouge
 #
 title : ECMAScript Daily
 tagline: ECMAScript Daily News
+description: "Provide daily news about ECMAScript Next"
 author :
   name : azu
   email : azuciao@gmail.com
   github : azu
   twitter : azu_re
 
+twitter_username: EcmascriptDaily
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls

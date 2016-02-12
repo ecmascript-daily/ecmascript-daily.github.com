@@ -11,3 +11,4 @@ tags:
 This is a specification draft for the RegExp legacy static properties in JavaScript.
 
 It is aimed at Annex B.
+It means that this specification order to maintain web compatibility.

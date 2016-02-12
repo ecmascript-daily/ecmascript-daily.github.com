@@ -8,9 +8,9 @@ group: navigation
 
 # Contributing Guideline
 
-## How to fix post?
+## How to fix article?
 
-1. Fix some thing in the post.md
+1. Fix some thing in the some-article.md
 2. Create a pull request :)
 
 Shortcut:

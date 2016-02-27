@@ -9,6 +9,25 @@ tags:
 ---
 Make Realm's field records start with an uppercase.
 
+```diff
+@@ -2603,7 +2603,7 @@
+           </tbody>
+         </table>
+       </emu-table>
+-      <p>The term &ldquo;<dfn>abrupt completion</dfn>&rdquo; refers to any completion with a [[type]] value other than ~normal~.</p>
++      <p>The term &ldquo;<dfn>abrupt completion</dfn>&rdquo; refers to any completion with a [[Type]] value other than ~normal~.</p>
+
+       <!-- es6num="6.2.2.1" -->
+       <emu-clause id="sec-normalcompletion" aoid="NormalCompletion">
+@@ -2614,14 +2614,14 @@
+         </emu-alg>
+         <p>Is a shorthand that is defined as follows:</p>
+         <emu-alg>
+-          1. Return Completion{[[type]]: ~normal~, [[value]]: _argument_, [[target]]:~empty~}.
++          1. Return Completion{[[Type]]: ~normal~, [[Value]]: _argument_, [[Target]]:~empty~}.
+...
+```
+
 This changes come from:
 
 - [Make Realm's field records start with an uppercase code point · Issue #393 · tc39/ecma262](https://github.com/tc39/ecma262/issues/393 "Make Realm&#39;s field records start with an uppercase code point · Issue #393 · tc39/ecma262")

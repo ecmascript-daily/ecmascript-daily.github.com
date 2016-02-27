@@ -33,7 +33,7 @@ This changes come from:
 - [Make Realm's field records start with an uppercase code point · Issue #393 · tc39/ecma262](https://github.com/tc39/ecma262/issues/393 "Make Realm&#39;s field records start with an uppercase code point · Issue #393 · tc39/ecma262")
 - [Define security around Window, WindowProxy, and Location properly by annevk · Pull Request #638 · whatwg/html](https://github.com/whatwg/html/pull/638#issuecomment-185094413 "Define security around Window, WindowProxy, and Location properly by annevk · Pull Request #638 · whatwg/html")
 
-## The motivation of the change
+## The motivation to change
 
 @annevk said
 

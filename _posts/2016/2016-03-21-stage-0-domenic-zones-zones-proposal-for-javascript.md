@@ -14,4 +14,4 @@ related:
 @domenic write Zones proposal(Stage 0).
 Zones proposal aim to resolve difficulty of async debugging.
 
-Current [Zones](http://domenic.github.io/zones/ "Zones") add `Zone` function and modify `PerformPromiseThen` aka `Promise#then` mechanism.
+Current [Zones](http://domenic.github.io/zones/ "Zones") add `Zone` function and modify `PerformPromiseThen` aka. `Promise#then` mechanism.

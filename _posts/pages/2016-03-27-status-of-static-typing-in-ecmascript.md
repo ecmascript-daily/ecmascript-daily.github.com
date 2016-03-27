@@ -1,7 +1,7 @@
 ---
 title: "Status of Static Typing in ECMAScript"
 author: azu
-layout: page
+layout: post
 date : 2016-03-27T18:24
 category: ECMAScript
 tags:

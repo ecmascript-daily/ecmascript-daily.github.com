@@ -9,3 +9,11 @@ tags:
   - spec
 ---
 Secure ECMAScript(SES) Proposal.
+
+SES Propsal contains follwing `Reflect` methods.
+
+```js
+Reflect.theProtoGlobal
+Reflect.makeIsolatedRealm()
+Reflect.confine(src, endowments)
+```

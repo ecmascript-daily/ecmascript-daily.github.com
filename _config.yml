@@ -36,7 +36,7 @@ twitter_username: EcmascriptDaily
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 
-production_url : http://ecmascript-daily.github.io
+production_url : https://ecmascript-daily.github.io
 future: true
 # Build settings
 markdown: kramdown

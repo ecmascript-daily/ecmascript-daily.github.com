@@ -37,7 +37,7 @@ twitter_username: EcmascriptDaily
 #
 
 production_url : http://ecmascript-daily.github.io
-
+future: true
 # Build settings
 markdown: kramdown
 gems:

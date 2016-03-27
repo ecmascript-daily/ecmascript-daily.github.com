@@ -2,13 +2,13 @@
 title: "Status of Static Typing in ECMAScript"
 author: azu
 layout: post
+permalink: /pages/status-of-static-typing-in-ecmascript/
 date : 2016-03-27T18:24
 category: ECMAScript
 tags:
     - ECMAScript
     - Proposal
     - Typing
-permalink: /pages/status-of-static-typing-in-ecmascript/
 
 ---
 

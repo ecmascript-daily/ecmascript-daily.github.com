@@ -1,8 +1,10 @@
-@import "./index-page";
+@charset "UTF-8";
 @import "./base-container";
 @import "./footer";
 @import "./syntax-highlight";
 @import "./svg-icons";
+@import "./markdown";
+@import "./index-page";
 /* Custom container */
 
 /* Replaced with normal container and standard footer */
@@ -104,4 +106,3 @@ h1, h2, h3, h4 {
     word-wrap: break-word;
     white-space: pre-wrap;
 }
-

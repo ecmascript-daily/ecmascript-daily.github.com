@@ -1,0 +1,5 @@
+<script>
+if (location.protocol === "http:" && location.hostname !== "localhost") {
+	location.href = location.href.replace(/^http:/, 'https:');
+}
+</script>

@@ -40,6 +40,11 @@ production_url : https://ecmascript-daily.github.io
 future: true
 # Build settings
 markdown: kramdown
+
+kramdown:
+   input: GFM
+   hard_wrap: false
+
 gems:
   - jemoji
   - jekyll-mentions

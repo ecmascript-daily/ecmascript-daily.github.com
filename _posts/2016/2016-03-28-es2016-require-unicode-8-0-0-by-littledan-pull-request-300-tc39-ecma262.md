@@ -19,7 +19,9 @@ ES2016 use Unicode 8.0.0 and remove an additional category.
 It means that  ES2016 make `U+180E` out of whitepace.
 
 ```js
-eval("1\u180E===1"); // false in ES2016
+eval("1\u180E===1"); // throw exception in ES2016
+// SyntaxError: illegal character in ES2016
+// `true` in ES2015
 ```
 
 - [13004-vowel-sep-change.pdf](http://www.unicode.org/L2/L2013/13004-vowel-sep-change.pdf "13004-vowel-sep-change.pdf")

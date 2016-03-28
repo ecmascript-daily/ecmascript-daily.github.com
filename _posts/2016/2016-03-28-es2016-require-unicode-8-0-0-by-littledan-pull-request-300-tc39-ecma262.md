@@ -6,7 +6,7 @@ date: '2016-03-28T01:24:17+00:00'
 tags:
   - ECMAScript
   - spec
-  - 'ES2016 '
+  - 'ES2016'
   - Unicode
 ---
 ES2016 use Unicode 8.0.0.

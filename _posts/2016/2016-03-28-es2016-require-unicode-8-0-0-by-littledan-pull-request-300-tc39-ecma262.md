@@ -1,6 +1,6 @@
 ---
 layout: news
-title: '[ES2016] Require Unicode 8.0.0 by littledan · Pull Request #300 · tc39/ecma262'
+title: '[ES2016] Require Unicode 8.0.0 · Pull Request #300 · tc39/ecma262'
 item-url: 'https://github.com/tc39/ecma262/pull/300'
 date: '2016-03-28T01:24:17+00:00'
 tags:

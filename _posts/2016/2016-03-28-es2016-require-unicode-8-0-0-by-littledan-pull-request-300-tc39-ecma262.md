@@ -12,7 +12,7 @@ tags:
 ES2016 use Unicode 8.0.0 and remove a section.
 
 ```diff
- -    <p>ECMAScript implementations must recognize as |WhiteSpace| code points listed in the &ldquo;Separator, space&rdquo; (Zs) category by Unicode 5.1. ECMAScript implementations may also recognize as |WhiteSpace| additional category Zs code points from subsequent editions of the Unicode Standard.</p>
+-    <p>ECMAScript implementations must recognize as |WhiteSpace| code points listed in the &ldquo;Separator, space&rdquo; (Zs) category by Unicode 5.1. ECMAScript implementations may also recognize as |WhiteSpace| additional category Zs code points from subsequent editions of the Unicode Standard.</p>
 +    <p>ECMAScript implementations must recognize as |WhiteSpace| code points listed in the &ldquo;Separator, space&rdquo; (Zs) category.</p>
 ```
 

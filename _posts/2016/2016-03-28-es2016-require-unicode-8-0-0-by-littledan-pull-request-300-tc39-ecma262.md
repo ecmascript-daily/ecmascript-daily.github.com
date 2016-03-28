@@ -17,6 +17,7 @@ eval("1\u180E===1"); // false in ES2016
 ```
 
 - [13004-vowel-sep-change.pdf](http://www.unicode.org/L2/L2013/13004-vowel-sep-change.pdf "13004-vowel-sep-change.pdf")
+- [tc39-notes/2016-01-26.md at master · rwaldron/tc39-notes](https://github.com/rwaldron/tc39-notes/blob/master/es7/2016-01/2016-01-26.md#unicode-fix-httpsgithubcomtc39ecma262pull300-de "tc39-notes/2016-01-26.md at master · rwaldron/tc39-notes")
 
 This change has included in [ES2016 Draft 2016-02-15](https://github.com/tc39/ecma262/releases/tag/es2016-draft-20160215 "ES2016 Draft 2016-02-15").
 

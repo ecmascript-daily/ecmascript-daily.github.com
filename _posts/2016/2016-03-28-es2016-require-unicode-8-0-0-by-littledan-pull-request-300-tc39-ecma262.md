@@ -22,9 +22,11 @@ This change has included [ES2016 Draft 2016-02-15](https://github.com/tc39/ecma2
 
 ## Related items
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/BrendanEich">@BrendanEich</a> <a href="https://twitter.com/jasvir">@jasvir</a> <a href="https://twitter.com/awbjs">@awbjs</a> <a href="https://twitter.com/fugueish">@fugueish</a> <a href="https://twitter.com/unicode">@unicode</a> <a href="https://twitter.com/bterlson">@bterlson</a> So why Chrome/Firefox/nodeJS all eval(&quot;1 === \u180E 1&quot;) true when specs say no? <br>🤔</p>&mdash; UniqueOde⁰Consortium (@FakeUnicode) <a href="https://twitter.com/FakeUnicode/status/713929097965993985">March 27, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/BrendanEich">@BrendanEich</a> <a href="https://twitter.com/jasvir">@jasvir</a> <a href="https://twitter.com/awbjs">@awbjs</a> <a href="https://twitter.com/fugueish">@fugueish</a> <a href="https://twitter.com/unicode">@unicode</a> <a href="https://twitter.com/bterlson">@bterlson</a> So why Chrome/Firefox/nodeJS all eval(&quot;1 === \u180E 1&quot;) true when specs say no? <br>🤔</p>&mdash; UniqueOde⁰Consortium (@FakeUnicode) <a href="https://twitter.com/FakeUnicode/status/713929097965993985">March 27, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/FakeUnicode">@FakeUnicode</a> recent Unicode spec change<br> Note all browser updated yet<a href="https://t.co/6h3KwqRvon">https://t.co/6h3KwqRvon</a></p>&mdash; Allen Wirfs-Brock (@awbjs) <a href="https://twitter.com/awbjs/status/713929024259510272">March 27, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 @mathiasbynens's [regexpu](https://github.com/mathiasbynens/regexpu "regexpu") library already followed this change.
 

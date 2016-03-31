@@ -1,6 +1,6 @@
 ---
 layout: news
-title: 'Why Remove [[Enumerate]] and Reflect.enumerate?'
+title: 'Why Remove Proxy's [[Enumerate]] and Reflect.enumerate?'
 item-url: 'https://github.com/tc39/ecma262/pull/367'
 date: '2016-02-10T15:44:11+00:00'
 tags:

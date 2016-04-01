@@ -9,6 +9,5 @@ tags:
 ---
 Split up Additional export proposal to `export * as ns from` and `export v from "md`.
 
-- https://github.com/leebyron/ecmascript-export-default-from
-- https://github.com/leebyron/ecmascript-export-ns-from
-
+- [https://github.com/leebyron/ecmascript-export-default-from](https://github.com/leebyron/ecmascript-export-default-from)
+- [https://github.com/leebyron/ecmascript-export-ns-from](https://github.com/leebyron/ecmascript-export-ns-from)

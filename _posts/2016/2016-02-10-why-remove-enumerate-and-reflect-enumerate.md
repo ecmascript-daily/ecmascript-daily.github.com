@@ -41,3 +41,10 @@ function* EnumerateObjectProperties(obj) {
   }
 }
 ```
+
+Edit: Add private thread capture on TC39.
+
+- [https://github.com/tc39/ecma262/files/209297/Should.we.get.rid.of.the.enumerate.trap.and.Reflect.enumerate.Issue.1.tc39-Reflector.pdf](https://github.com/tc39/ecma262/files/209297/Should.we.get.rid.of.the.enumerate.trap.and.Reflect.enumerate.Issue.1.tc39-Reflector.pdf)
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/slicknet">@slicknet</a> <a href="https://twitter.com/bterlson">@bterlson</a> <br>You can see the formerly private thread at <a href="https://t.co/vsUTb3RkkE">https://t.co/vsUTb3RkkE</a></p>&mdash; Allen Wirfs-Brock (@awbjs) <a href="https://twitter.com/awbjs/status/718197123942973440">April 7, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

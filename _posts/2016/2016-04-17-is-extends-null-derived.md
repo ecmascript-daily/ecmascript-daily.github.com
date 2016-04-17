@@ -19,7 +19,7 @@ class C extends null {
     Prototype of C: Function.prototype
     Prototype of C.prototype: null
 
-via [15. Classes](http://exploringjs.com/es6/ch_classes.html "15. Classes")
+via [15. Classes - Exploring ES6](http://exploringjs.com/es6/ch_classes.html "15. Classes")
 
 
 But, @allenwb said:

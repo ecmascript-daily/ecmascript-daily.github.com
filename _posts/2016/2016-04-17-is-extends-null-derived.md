@@ -24,8 +24,8 @@ via [15. Classes - Exploring ES6](http://exploringjs.com/es6/ch_classes.html "15
 
 But, @allenwb said:
 
-> I think it is a specification bug that extend null classes were marked as "derived"
-> -- https://github.com/tc39/ecma262/issues/543#issuecomment-210191577
+> I think it is a specification bug that extend null classes were marked as "derived"  
+> -- [https://github.com/tc39/ecma262/issues/543#issuecomment-210191577](https://github.com/tc39/ecma262/issues/543#issuecomment-210191577)
 
 If you interstend in the specification bug?, please follow  these issues:
 

@@ -23,6 +23,7 @@ via [15. Classes](http://exploringjs.com/es6/ch_classes.html "15. Classes")
 
 
 But, @allenwb said:
+
 > I think it is a specification bug that extend null classes were marked as "derived"
 > -- https://github.com/tc39/ecma262/issues/543#issuecomment-210191577
 

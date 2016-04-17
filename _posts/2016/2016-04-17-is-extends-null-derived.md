@@ -1,6 +1,6 @@
 ---
 layout: news
-title: Is `extends null` derived?
+title: Is "class C extends null" derived?
 item-url: 'https://github.com/tc39/ecma262/issues/543'
 date: '2016-04-17T10:20:47+00:00'
 tags:

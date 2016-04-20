@@ -27,6 +27,10 @@ But, @allenwb said:
 > I think it is a specification bug that extend null classes were marked as "derived"  
 > -- [https://github.com/tc39/ecma262/issues/543#issuecomment-210191577](https://github.com/tc39/ecma262/issues/543#issuecomment-210191577)
 
+Edit(2016-04-20): Fixed ECMAScript spec
+
+- [Normative: Set this appropriately for class extends null · tc39/ecma262@98c67f2](https://github.com/tc39/ecma262/commit/98c67f2c2696652005ab7fb7284fe8b4661a5dbf "Normative: Set this appropriately for class extends null · tc39/ecma262@98c67f2")
+
 If you interstend in the specification bug?, please follow  these issues:
 
 - [extends null · Issue #543 · tc39/ecma262](https://github.com/tc39/ecma262/issues/543 "extends null · Issue #543 · tc39/ecma262")

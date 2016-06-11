@@ -48,3 +48,8 @@ Edit: Add private thread capture on TC39.
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/slicknet">@slicknet</a> <a href="https://twitter.com/bterlson">@bterlson</a> <br>You can see the formerly private thread at <a href="https://t.co/vsUTb3RkkE">https://t.co/vsUTb3RkkE</a></p>&mdash; Allen Wirfs-Brock (@awbjs) <a href="https://twitter.com/awbjs/status/718197123942973440">April 7, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Realated 
+
+- [[[Enumerate]] and for-in on proxies can produce non-string keys · Issue #160 · tc39/ecma262](https://github.com/tc39/ecma262/issues/160)
+- [Proxy [[Enumerate]] overconstrains implementations · Issue #161 · tc39/ecma262](https://github.com/tc39/ecma262/issues/161)

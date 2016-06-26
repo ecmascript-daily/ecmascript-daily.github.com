@@ -17,7 +17,7 @@ This article describe the convetions.
 | Prefix     	| Description                         	| Example                                                                                                                                                    	|
 |------------	|-------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Normative: 	| Nortable change and Add new feature 	| [Normative: Require Unicode 8.0.0 #300](https://github.com/tc39/ecma262/pull/300)                                                                          	|
-|            	|                                     	| [Normative: Add Exponentiation,Operator](https://github.com/tc39/ecma262/commit/28bdf0798662bcb8efb11c4070f8a981a496ccc1)                                  	|
+|            	|                                     	| [Normative: Add Exponentiation Operator](https://github.com/tc39/ecma262/commit/28bdf0798662bcb8efb11c4070f8a981a496ccc1)                                  	|
 | Layering:  	| Layering ECMAScript and Other(DOM)  	| [Layering: fix unhandled rejection tracking in PerformPromiseThen](https://github.com/tc39/ecma262/commit/2d3a8a2a7b87a69ad479c8edc4d7f147cd0c1c3b)        	|
 |            	|                                     	| [Layering: add hook to allow implementations to block string,compilation](https://github.com/tc39/ecma262/commit/a34229a73bf64da67a001ee38273428c73de831f) 	|
 | Editorial: 	| Fix and Refactoring                 	| [Editorial: fix typo in assert (uninitialized->initialized)](https://github.com/tc39/ecma262/commit/ae020983ea79701d7de35819b456e686c9bc4792)              	|

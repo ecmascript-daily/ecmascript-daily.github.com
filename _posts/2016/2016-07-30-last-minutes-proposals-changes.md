@@ -9,6 +9,8 @@ The changes of proposal's status @ [53rd meeting of Ecma TC39](https://github.co
 
 | Proposal                                                                                                                                                                                         | Stage |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| [Nested import declarations](https://github.com/tc39/ecma262/pull/646 "Nested import declarations")                                            | NaN->0  |
+| [Unicode property escapes in regular expressions](https://github.com/mathiasbynens/es-regexp-unicode-property-escapes "Unicode property escapes in regular expressions")                                            | NaN->1  |
 | [Decorators](https://ecmascript-daily.github.io/2016/07/29/move-decorators-to-stage-2-per-july-2016-tc39-meeting-tc39-proposals-97eb62f "Decorators")                                            | 1->2  |
 | [String#{trimStart,trimEnd}](https://ecmascript-daily.github.io/2016/07/29/move-string-trimstart-trimend-to-stage-2-per-july-2016-tc39-meet-tc39-proposals-f51e3f5 "String#{trimStart,trimEnd}") | 1->2  |
 | [Promise#finally](https://ecmascript-daily.github.io/2016/07/29/move-promise-finally-to-stage-2-per-july-2016-tc39-meeting-tc39-proposals-a669637 "Promise#finally")                             | 0->2  |

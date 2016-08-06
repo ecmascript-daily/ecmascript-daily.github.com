@@ -10,7 +10,7 @@ tags:
   - spec
   - issue
 ---
-ECMAScript allow `for(var i in object){}` for backward compatibilty.
+ECMAScript allow `for(var i in object){}` in non-strict mode for backward compatibilty.
 
 ```
 for ( var BindingIdentifier Initializer in Expression) Statement

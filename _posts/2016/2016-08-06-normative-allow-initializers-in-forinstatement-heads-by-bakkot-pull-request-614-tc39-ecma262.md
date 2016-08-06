@@ -10,9 +10,10 @@ tags:
   - spec
   - issue
 ---
-ECMAScript allow `for(var i in object){}` in non-strict mode for backward compatibilty.
+ECMAScript allow `for(var a = b in object){}` in non-strict mode for backward compatibilty.
 
 ```
 for ( var BindingIdentifier Initializer in Expression) Statement
 ```
 
+- [9.i.a Reintroduce for-in-initializer](https://github.com/rwaldron/tc39-notes/blob/master/es7/2016-07/jul-26.md#9ia-reintroduce-for-in-initializer "9.i.a Reintroduce for-in-initializer")

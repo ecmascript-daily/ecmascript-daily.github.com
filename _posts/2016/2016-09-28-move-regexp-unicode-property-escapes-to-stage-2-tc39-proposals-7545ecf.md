@@ -8,7 +8,7 @@ tags:
   - ECMAScript
   - proposal
 related:
-  - title: Dummy
-    url: 'http://example.com/'
+  - title: "Unicode property escapes in regular expressions"
+    url: 'https://github.com/mathiasbynens/es-regexp-unicode-property-escapes'
 ---
 Move "RegExp Unicode Property Escapes" to stage 2

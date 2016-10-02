@@ -16,6 +16,9 @@ The changes of proposal's status @ [55th meeting of Ecma TC39](https://github.co
 | [Object Rest/Spread Properties](https://github.com/sebmarkbage/ecmascript-rest-spread "Object Rest/Spread Properties") | 2->3   |
 | [Asynchronous iteration](https://github.com/tc39/proposal-async-iteration "Asynchronous iteration") | 2->3   |
 
+Other proposals:
+
+- [tc39/proposals: Tracking ECMAScript Proposals](https://github.com/tc39/proposals "tc39/proposals: Tracking ECMAScript Proposals")
 
 Other changes:
 

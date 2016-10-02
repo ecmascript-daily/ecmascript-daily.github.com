@@ -24,4 +24,4 @@ Other changes:
 
 ## Previous
 
-- [ECMAScript proposal updates @ 2016-07](https://ecmascript-daily.github.io/2016/07/30/last-minutes-proposals-changes "ECMAScript proposal updates @ 2016-07)
+- [ECMAScript proposal updates @ 2016-07](https://ecmascript-daily.github.io/2016/07/30/last-minutes-proposals-changes "ECMAScript proposal updates @ 2016-07")

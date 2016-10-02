@@ -8,13 +8,13 @@ The changes of proposal's status @ [55th meeting of Ecma TC39](https://github.co
 
 | Proposal                                 | Stage  |
 | ---------------------------------------- | ------ |
-| [Nested import declarations](https://github.com/tc39/ecma262/pull/646 "Nested import declarations") | NaN->0 |
+| [Legacy RegExp features](https://github.com/tc39/proposal-regexp-legacy-features "Legacy RegExp features") | NaN->2 |
+| [import()](https://github.com/domenic/proposal-import-function "import()") | NaN->2 |
+| [of and from on collection constructors](https://github.com/leobalter/proposal-setmap-offrom "of and from on collection constructors") | 0->1   |
 | [Unicode property escapes in regular expressions](https://github.com/mathiasbynens/es-regexp-unicode-property-escapes "Unicode property escapes in regular expressions") | 1->2   |
 | [global](https://github.com/tc39/proposal-global "global")(aka. `System.global`) | 2->3   |
 | [Object Rest/Spread Properties](https://github.com/sebmarkbage/ecmascript-rest-spread "Object Rest/Spread Properties") | 2->3   |
-| [of and from on collection constructors](https://github.com/leobalter/proposal-setmap-offrom "of and from on collection constructors") | 0->1   |
 | [Asynchronous iteration](https://github.com/tc39/proposal-async-iteration "Asynchronous iteration") | 2->3   |
-| [import()](https://github.com/domenic/proposal-import-function "import()") | NaN->2 |
 
 
 Other changes:

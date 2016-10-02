@@ -7,5 +7,4 @@ tags:
   - ECMAScript
   - proposal
 ---
-ECMAScript proposalsのStage別まとめ。
-それぞれに小さなサンプルコードが書かれている。
+A collection of ECMAScript proposals with example codes.

@@ -20,7 +20,7 @@ The changes of proposal's status @ [55th meeting of Ecma TC39](https://github.co
 Other changes:
 
 - [Add instructions for onboarding existing proposals](https://github.com/tc39/proposals/commit/a1a63e612dbce4dc20db717b5ca35eb9a7b9d26b "Add instructions for onboarding existing proposals")
-  - When is the repository of proposal transferd to TC39 org.
+  - When is the repository of proposal transferd to TC39 org?
 
 ## Previous
 

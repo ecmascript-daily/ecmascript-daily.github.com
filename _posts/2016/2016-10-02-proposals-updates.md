@@ -4,7 +4,7 @@ title: ECMAScript proposal updates @ 2016-10
 date: '2016-10-02T15:38:12Z'
 ---
 
-The changes of proposal's status @ [55th meeting of Ecma TC39](https://github.com/tc39/agendas/blob/master/2016/11.md "Agenda for the 55th meeting of Ecma TC39").
+The changes of proposal's status @ [54th meeting of Ecma TC39](https://github.com/tc39/agendas/blob/master/2016/09.md "Agenda for the 54th meeting of Ecma TC39").
 
 | Proposal                                 | Stage  |
 | ---------------------------------------- | ------ |

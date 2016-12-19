@@ -8,3 +8,5 @@ tags:
   - community
 ---
 @leobalter summarize TC39 Meeting on 2016-11.
+
+- [The JSF TC39 Meeting Report — Nov 2016 – Medium](https://medium.com/@leobalter/the-jsf-tc39-meeting-report-nov-2016-adba2e380241 "The JSF TC39 Meeting Report — Nov 2016 – Medium")

@@ -1,5 +1,3 @@
-
-
 ---
 title: "ECMAScript proposal updates @ 2016-11"
 author: azu

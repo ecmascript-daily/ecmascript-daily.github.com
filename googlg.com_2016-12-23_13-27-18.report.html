@@ -1,0 +1,2439 @@
+<!--
+
+Copyright 2016 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+<!doctype html>
+
+<html data-report-context="cli">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAEfElEQVR4Aa2WA5B0RxDH/z3zuDp/tq2Lbdu2XUoxKMW2bdu2nZxte/dpplO3hTjZ2s0z5zftpkVrFXJYGCBAggEoUPY2p0XkOLoJNoE+yH5II3vLOQJyHL0bsgpiC9G1meishuiBzJEhchm9HXIL0fu5e949TuX1cvVbxplbiu6O3BjiP19HEFMpuNI9Z4O8XpIlKb6SbrnQOG0WeQGkKATAgAVdz3Sw/G6BenwoXAnls/JH1IqZ0fN70DeN2Q84b4AA0jBWkHewfXsUh0ykKSZTcVGamoincKR7xyrKpGH8uxDGv0vgmOqXZuf1o87ccP6wCpIkgb5ePZw2Yvj0icN+eshdMUcFIRVgAwIyGHTKUGqLEluUOWJqkpISRRi2S+BDgAuyAYHhwYsIxCACM/wMSQEBNXkLAjhvFVnEP2WMYzdvO6/4muDZMVCavSD8ujHDQkmxe90VP8y+5s1oznSoCJSfkRkC07yBhd3XRz+m1bd9/tN14XMd3kutI4/5s1qfnmEPjWgIcL5GZoCQUcbA56Cpw4g8TguxZBYiloomfGRCE1SAigKIxZKfG1rCW7cddOhIFIEEEWutIeLmyy+nXni8bMkMDiORv5uaxHW+NRSbFhbL0AeBI9MOyZyRbkpO2D2WVQ7lgSg/L6IsA8xJ0zMiX5GMpFnc37L+/bs3uX/d8rrPkYJQXFAuIgJ8UNwMLaest7Hy3Vs2e/S4OZ9dB4YV09CgAnOR0IwkzR5p2+SNSzd+9Jhp394M6YbJBRCuISYAFJpN5SQAy2q/SP1wg3JnRIlFDAIRokwi6If4XyoaQzohYgmAASGiCWv4W6QqR5asQgBNVGjBAWDLcSAug1Fj9FOvaH7tztd+fOhDzZXbYoiVKBwgkAiGMdYzPnVN1V6PfXLI9dUb9vHtZBwZ6RAYlHegAVkNBAjnzKzf4om6WVso2zFD3/HGyYZpGimjsJJJgBKUmOCarfdpXLYdAbY/QVplwVLHHMMEc4FGZhg2HBFZfppYg6GF4bkJGXiLWz6aYfg+CyoEoDVcC4ahmaGk6Ttx2x9b9t3Lmz9+9tp3Li5yw0CD8sumTExi8ujGoFwzbRuxgZ45tR/M+OlpZ+ATuHP9otluvxfqJBGzBmn6bwALhmQApAT5knyoYcRKsKC3Y+U3rxZ/8xzGPkNsLcwNSIcp3ZfqFpkxUNIgB7CZDQUAikjTHwEENjSYaFxiEIiACuYZozx1yC8dSZZ31U9cXl9W1bfvosDYkXRoMMcjuyjggcq37cGl0UBK95RQV5LasqOVACnNQiMSxKCFlSFFEp0EG3p1v15Rr+b/oqdWcVETOx0whpXwe3k+yAKHwB+63hR1JDjSUYnwp9PoPNG3TDSvkFVLxA/TMQTMBDsRLZrGPDVUO34TrX9LzfyQ3ToiQBVBJ6BtsCRGjEJiZqLfezDAabY0AaRAAeQE5CgjJG+u6NnS+HFH451NqSZO8879PNjpLl3xFnEMYQWUAzBIAxrEyHUhsJjcQBABzEEWA2Jkc/Ojk38Fe4MpHMjZ+XoAAAAASUVORK5CYII=">
+  <title>Lighthouse report: https://googlg.com/</title>
+  <style>/**
+ * Copyright 2016 Google Inc. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+span, div, p, section, header, h1, h2, li, ul {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+:root {
+  --text-font-family: "Roboto", -apple-system, BlinkMacSystemFont,  "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #719EA8;
+  --poor-color: #eb211e;
+  --good-color: #1ac123;
+  --average-color: #ffae00;
+  --unknown-color: #b3b3b3;
+  --gutter-gap: 12px;
+  --gutter-width: 40px;
+  --body-font-size: 14px;
+  --body-line-height: 20px;
+  --subitem-font-size: 14px;
+  --subitem-line-height: 20px;
+  --subheading-font-size: 16px;
+  --subheading-line-height: 24px;
+  --subheading-color: var(--accent-color);
+  --heading-font-size: 24px;
+  --heading-line-height: 32px;
+  --subitem-indent: 24px;
+  --max-line-length: none;
+
+  --report-width: 1280px;
+  --report-menu-width: 280px;
+  --report-header-height: 58px;
+}
+
+:root[data-report-context="devtools"] {
+  --text-font-family: '.SFNSDisplay-Regular', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  --text-color: #222;
+  --secondary-text-color: #606060;
+  --accent-color: #3879d9;
+  --body-font-size: 13px;
+  --body-line-height: 17px;
+  --subitem-font-size: 14px;
+  --subitem-line-height: 18px;
+  --subheading-font-size: 16px;
+  --subheading-line-height: 20px;
+  --subheading-color: inherit;
+  --heading-font-size: 20px;
+  --heading-line-height: 24px;
+  --subitem-indent: 24px;
+  --max-line-length: calc(60 * var(--body-font-size));
+}
+
+html {
+  font-family: var(--text-font-family);
+  font-size: var(--body-font-size);
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* When deep linking to a section, bump the heading down so it's not covered by the top nav. */
+:target.aggregations {
+  padding-top: calc(var(--report-header-height) + var(--heading-line-height)) !important;
+}
+
+a {
+  color: #15c;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.report-error {
+  font-family: consolas, monospace;
+}
+
+.error-stack {
+  white-space: pre-wrap;
+}
+
+.error-results {
+  background: #dedede;
+  max-height: 600px;
+  overflow: auto;
+  border-radius: 2px;
+}
+
+.report {
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--report-width);
+  background: #FFF;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.26);
+}
+
+.report-body__icon {
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  flex: 0 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+.report-body__icon.print {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/><path fill="none" d="M0 0h24v24H0z"/></svg>');
+}
+
+.report-body__icon.share {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>');
+  display: none;
+}
+
+.report-body__icon.copy {
+  background-image: url('data:image/svg+xml;utf8,<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>');
+  display: none;
+}
+
+.score-container__overall-score {
+  color: #FFF;
+  font-size: 92px;
+  font-weight: 100;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  min-width: 70px;
+}
+
+.score-container__overall-score::after {
+  content: 'Your score';
+  position: absolute;
+  bottom: -4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  opacity: 0.5;
+}
+
+.score-container__max-score {
+  color: #57A0A8;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.report-body {
+  position: relative;
+}
+
+.report-body__content {
+  margin-left: var(--report-menu-width);
+  position: relative;
+}
+
+.report-body__aggregations-container {
+  padding-top: var(--report-header-height);
+  will-change: transform;
+}
+
+.report-body__menu-container {
+  height: 100%;
+  width: 100%;
+  min-width: 230px;
+  max-width: var(--report-width);
+  position: fixed;
+  will-change: transform;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  pointer-events: none;
+}
+
+.menu {
+  width: var(--report-menu-width);
+  background: #FFFFFF;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+  border-right: 1px solid #DFDFDF;
+}
+
+.menu__header {
+  background: #2238b3;
+  padding: 0 20px;
+  height: 115px;
+  line-height: 54px;
+  color: #FFF;
+  font-family: var(--text-font-family);
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.menu__header::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('data:image/svg+xml;utf-8,<svg width="86" height="86" viewBox="0 0 86 86" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Beta</title><defs><path id="b" d="M-11.704 13.144H125.58v30H-11.703z"/><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="a"><feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/></filter><path id="d" d="M.4 16.972h119v28.4H.4z"/><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="c"><feGaussianBlur stdDeviation="3.5" in="SourceAlpha" result="shadowBlurInner1"/><feOffset in="shadowBlurInner1" result="shadowOffsetInner1"/><feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.689509737 0" in="shadowInnerInner1"/></filter><text id="f" font-family="Arial-BoldMT, Arial" font-size="13" font-weight="bold" fill="#FFF"><tspan x="37.556" y="34.556">BETA</tspan></text><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="e"><feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.140964674 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g mask="url(#mask-2)" transform="rotate(45 55.44 24.523)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#CF3A3C" xlink:href="#b"/></g><use filter="url(#c)" xlink:href="#d" mask="url(#mask-2)" transform="rotate(45 58.4 27.55)" fill="#000"/><g mask="url(#mask-2)" transform="rotate(45 52.556 36.435)" fill="#FFF"><use filter="url(#e)" xlink:href="#f"/><use xlink:href="#f"/></g><path d="M8.5-.5l88.204 88.204M8.5-39.5l88.204 88.204" stroke="#FFF" stroke-linecap="square" stroke-dasharray="1,2" opacity=".386" mask="url(#mask-2)" transform="translate(-3)"/></g></svg>') top right no-repeat;
+}
+
+.menu__header-title {
+  font-family: var(--text-font-family);
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.menu__header-version {
+  opacity: 0.4;
+  color: #fff;
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.menu__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__nav-item {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #EBEBEB;
+}
+
+.menu__link {
+  padding: 0 20px;
+  text-decoration: none;
+  color: #777;
+  display: flex;
+}
+
+.menu__link:hover {
+  background-color: #448aff;
+  color: #FFF;
+}
+
+.menu__link-label {
+  flex: 1;
+  color: #49525F;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu__link-score {
+  padding-left: 20px;
+}
+
+.report-body__metadata {
+  flex: 1 1 0;
+  white-space: nowrap;
+}
+
+.report-body__buttons {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.report-body__url {
+  font-family: var(--text-font-family);
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.report-body__url a {
+  color: currentColor;
+}
+
+.report-body__breakdown {
+  flex: 1;
+  max-width: 100%;
+}
+
+.report-body__breakdown-item {
+  padding-bottom: 6px;
+}
+
+.report-body__breakdown-item:last-of-type {
+  border: none;
+}
+
+.report-body__header {
+  height: var(--report-header-height);
+  border-bottom: 1px solid #EBEBEB;
+  background: #FAFAFA;
+  margin-left: var(--report-menu-width);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--heading-line-height);
+  position: fixed;
+  will-change: transform;
+  z-index: 1;
+  max-width: calc( var(--report-width) - var(--report-menu-width));
+  width: calc(100vw - var(--report-menu-width));
+}
+
+.report-section__title {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--text-font-family);
+  font-size: 28px;
+  font-weight: 500;
+  color: #49525F;
+  display: flex;
+  margin: 0.4em 0 0.3em 0;
+}
+
+.report-section__title-main {
+  flex: 1;
+}
+
+.report-section__title-score-total {
+  font-weight: 500;
+}
+
+.report-section__title-score-max {
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: -4px;
+}
+
+.report-section__subtitle {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--text-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  color: #719EA8;
+  display: flex;
+  margin: 24px 0 16px 0;
+}
+
+.report-section__description {
+  color: #5F6875;
+  font-size: 16px;
+  margin: 0 0 1em 0;
+  line-height: 1.4;
+  max-width: 750px;
+}
+.report-section__description:empty {
+  margin: 0;
+}
+
+.report-section__aggregation-description {
+  font-style: italic;
+  color: #777;
+  font-size: 14px;
+  margin: 0.6em 0 0.8em 0;
+  line-height: 1.4;
+  max-width: 750px;
+}
+
+.report-section__label {
+  flex: 1;
+}
+
+.report-section__individual-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.report-section__item {
+  padding-left: 32px;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNXB4IiBoZWlnaHQ9IjVweCIgdmlld0JveD0iMCAwIDUgNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxjaXJjbGUgaWQ9Ik92YWwtNzAiIHN0cm9rZT0ibm9uZSIgZmlsbD0iIzY0NjQ2NCIgZmlsbC1ydWxlPSJldmVub2RkIiBjeD0iMi41IiBjeT0iMi41IiByPSIyLjUiPjwvY2lyY2xlPgo8L3N2Zz4K') 14px 8px no-repeat;
+  line-height: 24px;
+}
+
+.report-section__item-details {
+  display: flex;
+}
+
+.report-section__item-category {
+  font-weight: 700;
+}
+
+.report-section__item-extended-info {
+  font-size: 15px;
+  color: #555;
+  font-style: italic;
+  margin: 0px 0px 16px 24px;
+  max-width: 90%;
+}
+
+.report-section__item-extended-info:empty {
+  margin: 0;
+}
+
+.report-section__item-helptext {
+  font-size: 14px;
+  color: #999;
+  font-style: italic;
+  padding: 8px 0px 16px 24px;
+  max-width: 90%;
+}
+
+.report-section__item-help-toggle {
+  color: currentColor;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0,0,0.3,1);
+  font-size: 90%;
+  font-weight: 600;
+  margin-left: 8px;
+  vertical-align: top;
+  opacity: 0.6;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.report-section__item-help-toggle:hover {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+
+.report-section__item-raw-value {
+  color: #777;
+}
+
+.report-section__item-description {
+  flex: 1;
+}
+
+.footer {
+  margin-top: 40px;
+  margin-left: var(--report-menu-width);
+  height: 130px;
+  line-height: 90px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid #EBEBEB;
+  color: #999;
+}
+
+.coming-soon, .coming-soon * {
+  color: #AAA;
+}
+
+.coming-soon .report-section__item-value {
+  font-size: 70%;
+}
+
+.devtabs {
+  flex: 0 1 auto;
+  background: right 0 / auto 27px no-repeat url(tabs_right.png),
+              0 0 / auto 27px no-repeat url(tabs_left.png),
+              0 0 / auto 27px repeat-x url(tabs_center.png);
+  height: 27px;
+}
+
+.aggregations__header {
+  position: relative;
+}
+
+.aggregations__header > h1 {
+  font-size: var(--heading-font-size);
+  font-weight: normal;
+  line-height: var(--heading-line-height);
+}
+
+.aggregations {
+  padding: var(--heading-line-height);
+  padding-left: calc(var(--heading-line-height) + var(--gutter-width) + var(--gutter-gap));
+}
+
+.aggregations:not(:first-child) {
+  border-top: 1px solid #ccc;
+}
+
+.aggregations__desc {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  margin-top: calc(var(--body-line-height) / 2);
+}
+
+.section-result {
+  position: absolute;
+  top: 0;
+  left: calc((var(--gutter-width) + var(--gutter-gap)) * -1);
+  width: var(--gutter-width);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.section-result__score {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.section-result__points {
+  font-size: var(--heading-font-size);
+}
+
+.section-result__divider {
+  display: none;
+}
+
+.section-result__total {
+  font-size: var(--body-font-size);
+  margin-top: 2px;
+  border-top: 1px solid #fff;
+  padding-top: 4px;
+}
+
+.aggregation__header {
+  max-width: var(--max-line-length);
+}
+
+.aggregation__header > h2 {
+  font-size: var(--subheading-font-size);
+  font-weight: normal;
+  line-height: var(--subheading-line-height);
+  color: var(--subheading-color);
+}
+
+.aggregation {
+  margin-top: var(--subheading-line-height);
+  max-width: var(--max-line-length);
+}
+
+.aggregation__desc {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  margin-top: calc(var(--body-line-height) / 2);
+}
+
+.subitems {
+  list-style: none;
+  margin-top: var(--subitem-line-height);
+}
+
+.subitem {
+  position: relative;
+  font-size: var(--subitem-font-size);
+  padding-left: calc(var(--subitem-indent) + var(--gutter-width) + var(--gutter-gap));
+  margin-top: calc(var(--subitem-line-height) / 2);
+}
+
+.subitem.--coming-soon {
+  color: var(--secondary-text-color);
+}
+
+.subitem strong {
+  font-weight: bold;
+}
+
+.subitem small {
+  font-size: var(--body-font-size);
+}
+
+.subitem__desc {
+  line-height: var(--subitem-line-height);
+}
+
+.subitem-result {
+  position: absolute;
+  top: 0;
+  left: var(--subitem-indent);
+  width: var(--gutter-width);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.subitem-result__good, .subitem-result__poor, .subitem-result__unknown {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: calc((var(--subitem-line-height) - 16px) / 2);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: transparent;
+  background-color: #000;
+}
+
+.subitem-result__good::after, .subitem-result__poor::after, .subitem-result__unknown::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-mask: center center / 12px 12px no-repeat;
+  background-color: #fff;
+}
+
+.subitem-result__good::after { -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><title>good</title><path d="M9.17 2.33L4.5 7 2.83 5.33 1.5 6.66l3 3 6-6z" fill="#FFF" fill-rule="evenodd"/></svg>'); }
+.subitem-result__poor::after { -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><title>poor</title><path d="M8.33 2.33l1.33 1.33-2.335 2.335L9.66 8.33 8.33 9.66 5.995 7.325 3.66 9.66 2.33 8.33l2.335-2.335L2.33 3.66l1.33-1.33 2.335 2.335z" fill="#FFF" fill-rule="evenodd"/></svg>'); }
+.subitem-result__unknown::after { -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><title>neutral</title><path d="M2 5h8v2H2z" fill="#FFF" fill-rule="evenodd"/></svg>'); }
+
+.subitem-result__points {
+  margin-top: calc((var(--subitem-line-height) - var(--subitem-font-size) - 4px) / 2);
+  background: #000;
+  padding: 2px 4px;
+  border-radius: 1px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.subitem__details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: var(--subitem-indent);
+}
+
+.subitem__detail {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  margin-top: calc(var(--body-line-height) / 2);
+}
+
+.subitem__help-toggle {
+  -webkit-appearance: none;
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  margin-left: .5em;
+  outline: 0;
+}
+
+.subitem__help-toggle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-mask: 1px 1px / 12px 12px no-repeat;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><title>help</title><path d="M5.216 7.457c0-.237.011-.452.033-.645.021-.194.058-.372.11-.535a1.918 1.918 0 0 1 .55-.847 3.65 3.65 0 0 0 .545-.597c.133-.19.2-.398.2-.623 0-.28-.053-.485-.16-.616-.107-.13-.268-.196-.482-.196a.583.583 0 0 0-.457.207.834.834 0 0 0-.15.271c-.04.111-.062.244-.065.398H3.67c.003-.401.067-.745.19-1.032a1.96 1.96 0 0 1 .5-.707c.208-.185.455-.32.738-.406A3.13 3.13 0 0 1 6.012 2c.359 0 .682.046.968.137.287.091.53.227.729.406.2.18.352.401.457.667.105.265.158.571.158.919 0 .233-.03.44-.091.624-.061.182-.145.353-.252.51-.107.158-.233.311-.378.46-.145.149-.3.306-.465.47a2.084 2.084 0 0 0-.24.275c-.063.09-.115.183-.152.282a1.57 1.57 0 0 0-.084.323 2.966 2.966 0 0 0-.033.384H5.216zm-.202 1.634a.96.96 0 0 1 .067-.36.828.828 0 0 1 .19-.287.913.913 0 0 1 .291-.191.969.969 0 0 1 .376-.07c.138 0 .263.023.375.07.112.046.21.11.292.19.082.081.146.177.19.288a.96.96 0 0 1 .067.36.96.96 0 0 1-.067.36.828.828 0 0 1-.19.288.913.913 0 0 1-.292.191.969.969 0 0 1-.375.07.969.969 0 0 1-.376-.07.913.913 0 0 1-.291-.19.828.828 0 0 1-.19-.288.96.96 0 0 1-.067-.36z" fill="#000" fill-rule="evenodd"/></svg>');
+  background-color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.subitem__help-toggle:hover {
+  border-color: var(--secondary-text-color);
+}
+
+.subitem__help-toggle:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.subitem__help-toggle:checked::after {
+  background-color: #fff;
+}
+
+.subitem__help {
+  display: none;
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  margin-top: calc(var(--body-line-height) / 2);
+  margin-left: var(--subitem-indent);
+}
+
+.subitem__help-toggle:checked + .subitem__help {
+  display: block;
+}
+
+.subitem__debug {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  margin-top: calc(var(--body-line-height) / 2);
+  margin-left: var(--subitem-indent);
+  color: var(--poor-color);
+}
+
+.score-good-bg {
+  background-color: var(--good-color);
+}
+.score-average-bg {
+  background-color: var(--average-color);
+}
+.score-poor-bg {
+  background-color: var(--poor-color);
+}
+.score-unknown-bg {
+  background-color: var(--unknown-color);
+}
+
+.export-section {
+  position: relative;
+}
+
+.export-button {
+  display: inline-flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  min-width: 5.14em;
+  padding: 0.7em 1.1em;
+  letter-spacing: 0.02em;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+  outline: 0;
+  font-weight: 500;
+  display: none;
+}
+
+.export-dropdown {
+  position: absolute;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0;
+  padding: 8px 0;
+  cursor: pointer;
+  top: 36px;
+  left: 0;
+  z-index: 1;
+  box-shadow: 1px 1px 3px #ccc;
+  min-width: 125px;
+  list-style: none;
+  line-height: 1.5em;
+  visibility: hidden;
+  clip: rect(0, 140px, 0, 0);
+  opacity: 0;
+  transition: all 200ms cubic-bezier(0,0,0.2,1);
+}
+
+.export-button:focus,
+.export-button.active {
+  box-shadow: 1px 1px 3px #ccc;
+}
+
+.export-button.active + .export-dropdown {
+  visibility: visible;
+  opacity: 1;
+  clip: rect(0, 140px, 100px, 0);
+}
+
+.export-dropdown a {
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0 12px;
+}
+
+.export-dropdown a:hover,
+.export-dropdown a:focus {
+  background-color: rgb(239,239,239);
+  outline: 0;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; /* print background colors */
+  }
+
+  .report {
+    box-shadow: none;
+  }
+
+  .report-body__header,
+  .report-body__menu-container {
+    display: none;
+  }
+
+  .report-body__content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .report-body__metadata {
+    margin-right: 8px;
+    max-width: 65%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --subitem-indent: 8px;
+    --gutter-width: 16px;
+  }
+  .aggregations {
+    padding-right: 8px;
+  }
+  .report-body__menu-container {
+    display: none;
+  }
+  .report-body__content,
+  .report-body__header {
+    margin-left: 0;
+  }
+  .report-body__header {
+    width: 100%;
+    padding: 8px;
+  }
+  .footer {
+    margin-top: 0;
+    margin-left: 0;
+    height: auto;
+  }
+}
+
+:root[data-report-context="devtools"] .report {
+  margin: 0;
+  box-shadow: none;
+  max-width: none;
+}
+
+:root[data-report-context="devtools"] .report-body__menu-container {
+  display: none;
+}
+
+:root[data-report-context="devtools"] .report-body__header {
+  display: none;
+}
+
+:root[data-report-context="devtools"] .report-body__content {
+  margin-left: 0;
+}
+
+:root[data-report-context="devtools"] .footer {
+  display: none;
+}
+
+:root[data-report-context="viewer"] .share,
+:root[data-report-context="viewer"] .copy,
+:root[data-report-context="viewer"] .export-button {
+  display: initial;
+}
+</style>
+    <script>/**
+ * @license
+ * Copyright 2016 Google Inc. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* global window, document */
+
+'use strict';
+
+window.addEventListener('DOMContentLoaded', _ => {
+  const printButton = document.querySelector('.js-print');
+  printButton.addEventListener('click', _ => {
+    window.print();
+  });
+});
+</script>
+</head>
+<body>
+
+<div class="js-report report">
+  <section class="report-body">
+    <div class="report-body__header">
+      <div class="report-body__metadata">
+        <div class="report-body__url">Results for: <a href="https://googlg.com/" target="_blank">https://googlg.com/</a></div>
+        <div class="report-body__url">Generated on: 12/23/2016, 1:27:18 PM GMT+9</div>
+      </div>
+      <div class="report-body__buttons">
+        <span class="export-section">
+          <button class="export-button js-export" title="Export report in different formats">Export...</button>
+          <ul class="export-dropdown">
+            <a href="#" data-action="print">Print...</a>
+            <a href="#" data-action="save-html">Save as HTML...</a>
+            <a href="#" data-action="save-json">Save as JSON...</a>
+          </ul>
+        </span>
+        <button class="report-body__icon share js-share"></button>
+        <button class="report-body__icon copy js-copy"></button>
+          <button class="report-body__icon print js-print"></button>
+      </div>
+    </div>
+    <div class="report-body__content">
+      <div class="report-body__menu-container">
+        <div class="menu">
+          <div class="menu__header">
+            <h1 class="menu__header-title">Lighthouse</h1>
+            <div class="menu__header-version">Version: 1.3.1</div>
+          </div>
+          <ul class="menu__nav">
+            <li class="menu__nav-item">
+              <a class="menu__link" href="#progressive-web app">
+                Progressive Web App
+              </a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__link" href="#best-practices">
+                Best Practices
+              </a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__link" href="#performance-metrics">
+                Performance Metrics
+              </a>
+            </li>
+            <li class="menu__nav-item">
+              <a class="menu__link" href="#fancier-stuff">
+                Fancier stuff
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="report-body__aggregations-container">
+      <section class="js-breakdown aggregations" id="progressive-web app">
+        <header class="aggregations__header">
+          <h1>Progressive Web App</h1>
+          <p class="aggregations__desc">These audits validate the aspects of a Progressive Web App.</p>
+          <div class="section-result">
+            <span class="section-result__score score-poor-bg">
+              <span class="section-result__points">25</span>
+              <span class="section-result__divider">/</span>
+              <span class="section-result__total">100</span>
+            </span>
+          </div>
+        </header>
+
+        <div class="js-report-by-user-feature">
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>App can load on offline/flaky connections</h2>
+                <p class="aggregation__desc">Ensuring your web app can respond when the network connection is unavailable or flaky is critical to providing your users a good experience. This is achieved through use of a <a href="https://developers.google.com/web/fundamentals/primers/service-worker/">Service Worker</a>.</p>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Has a registered Service Worker
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        The service worker is the technology that enables your app to use many Progressive Web App features, such as offline, add to homescreen, and push notifications. <a href="https://developers.google.com/web/tools/lighthouse/audits/registered-service-worker" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+                    <div class="subitem__debug">
+                      No active service worker found for this origin.
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    URL responds with a 200 when offline
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        If you're building a Progressive Web App, consider using a service worker so that your app can work offline. <a href="https://developers.google.com/web/tools/lighthouse/audits/http-200-when-offline" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Page load performance is fast</h2>
+                <p class="aggregation__desc">Users notice if sites and apps don't perform well. These top-level metrics capture the most important perceived performance concerns.</p>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    First meaningful paint
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        First meaningful paint measures when the primary content of a page is visible. <a href="https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+                    <div class="subitem__debug">
+                      Cannot read property 'ts' of undefined
+                    </div>
+
+                  <div class="subitem-result">
+                        <span class="subitem-result__points score-poor-bg">
+                          -1
+                        </span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+
+                    Perceptual Speed Index<strong class="subitem__raw-value">: 157</strong>
+
+                      <small>(target: 1,250)</small>
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Speed Index shows how quickly the contents of a page are visibly populated. <a href="https://developers.google.com/web/tools/lighthouse/audits/speed-index" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                        <span class="subitem-result__points score-good-bg">
+                          100
+                        </span>
+                  </div>
+
+                    <style>
+                      .speedline-measures {
+                        font-size: 14px
+                      }
+                    </style>
+                    
+                    <ul class="subitem__details">
+                      <li class="subitem__detail">First Visual Change: <strong>89ms</strong></li>
+                      <li class="subitem__detail">Last Visual Change: <strong>186ms</strong></li>
+                    </ul>
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+
+                    Estimated Input Latency<strong class="subitem__raw-value">: 23.4ms</strong>
+
+                      <small>(target: 50ms)</small>
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        The score above is an estimate of how long your app takes to respond to user input, in milliseconds. There is a 90% probability that a user encounters this amount of latency, or less. 10% of the time a user can expect additional latency. If your score is higher than Lighthouse's target score, users may perceive your app as laggy. <a href="https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency" rel="noopener" target="_blank">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                        <span class="subitem-result__points score-good-bg">
+                          100
+                        </span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Time To Interactive (alpha)
+                      <small>(target: 5,000ms)</small>
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        Time to Interactive identifies the time at which your app appears to be ready enough to interact with. <a href="https://developers.google.com/web/tools/lighthouse/audits/time-to-interactive" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+                    <div class="subitem__debug">
+                      Cannot read property 'ts' of undefined
+                    </div>
+
+                  <div class="subitem-result">
+                        <span class="subitem-result__points score-poor-bg">
+                          -1
+                        </span>
+                  </div>
+
+                </li>
+                <li class="subitem --coming-soon --show-help">
+
+                  <p class="subitem__desc">
+
+                    Content scrolls at 60fps
+
+                      <small class="subitem__tease">(Coming soon)</small>
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__unknown score-unknown-bg">N/A</span>
+                  </div>
+
+                </li>
+                <li class="subitem --coming-soon --show-help">
+
+                  <p class="subitem__desc">
+
+                    Touch input gets a response in &lt; 150ms
+
+                      <small class="subitem__tease">(Coming soon)</small>
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__unknown score-unknown-bg">N/A</span>
+                  </div>
+
+                </li>
+                <li class="subitem --coming-soon --show-help">
+
+                  <p class="subitem__desc">
+
+                    App is interactive without jank after the first meaningful paint
+
+                      <small class="subitem__tease">(Coming soon)</small>
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__unknown score-unknown-bg">N/A</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Site is progressively enhanced</h2>
+                <p class="aggregation__desc">Progressive enhancement means that everyone can access the basic content and functionality of a page in any browser, and those without certain browser features may receive a reduced but still functional experience.</p>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Page contains some content when its scripts are not available
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        Your app should display some content when JavaScript is disabled, even if it's just a warning to the user that JavaScript is required to use the app. <a href="https://developers.google.com/web/tools/lighthouse/audits/no-js" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+                    <div class="subitem__debug">
+                      The page body should render some content if its scripts are not available.
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Network connection is secure</h2>
+                <p class="aggregation__desc">Security is an important part of the web for both developers and users. Moving forward, Transport Layer Security (TLS) support will be required for many APIs.</p>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+
+                    Site is on HTTPS
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        All sites should be protected with HTTPS, even ones that don't handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. <a href="https://developers.google.com/web/tools/lighthouse/audits/https" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Site redirects HTTP traffic to HTTPS
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        If you've already set up HTTPS, make sure that you redirect all HTTP traffic to HTTPS. <a href="https://developers.google.com/web/tools/lighthouse/audits/http-redirects-to-https" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>User can be prompted to Add to Homescreen</h2>
+                <p class="aggregation__desc">While users can manually add your site to their homescreen in the browser menu, the <a href="https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en">prompt (aka app install banner)</a> will proactively prompt the user to install the app if the below requirements are met and the user has visited your site at least twice (with at least five minutes between visits).</p>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Has a registered Service Worker
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        The service worker is the technology that enables your app to use many Progressive Web App features, such as offline, add to homescreen, and push notifications. <a href="https://developers.google.com/web/tools/lighthouse/audits/registered-service-worker" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+                    <div class="subitem__debug">
+                      No active service worker found for this origin.
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest exists
+
+
+                  </p>
+
+                    <div class="subitem__debug">
+                      No manifest found.
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest contains start_url
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest contains icons at least 144px
+
+
+                  </p>
+
+                    <div class="subitem__debug">
+                      WARNING: No icons found in the manifest
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest contains short_name
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Installed web app will launch with custom splash screen</h2>
+                <p class="aggregation__desc">A default splash screen will be constructed, but meeting these requirements guarantee a high-quality and customizable <a href="https://developers.google.com/web/updates/2015/10/splashscreen?hl=en">splash screen</a> the user sees between tapping the home screen icon and your app’s first paint.</p>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest exists
+
+
+                  </p>
+
+                    <div class="subitem__debug">
+                      No manifest found.
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest contains name
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest contains background_color
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest contains theme_color
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest contains icons at least 192px
+
+
+                  </p>
+
+                    <div class="subitem__debug">
+                      WARNING: No icons found in the manifest
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Address bar matches brand colors</h2>
+                <p class="aggregation__desc">The browser address bar can be themed to match your site. A theme-color <a href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">meta tag</a> will upgrade the address bar when a user browses the site, and the <a href="https://developers.google.com/web/updates/2015/08/using-manifest-to-set-sitewide-theme-color">manifest theme-color</a> will apply the same theme site-wide once it's been added to homescreen.</p>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest exists
+
+
+                  </p>
+
+                    <div class="subitem__debug">
+                      No manifest found.
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    HTML has a theme-color &lt;meta&gt;
+
+
+                  </p>
+
+                    <div class="subitem__debug">
+                      No valid theme-color meta tag found.
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+
+                    Manifest contains theme_color
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Design is mobile-friendly</h2>
+                <p class="aggregation__desc">Users increasingly experience your app on mobile devices, so it's important to ensure that the experience can adapt to smaller screens.</p>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+
+                    HTML has a viewport &lt;meta&gt;
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Add a viewport meta tag to optimize your app for mobile screens. <a href="https://developers.google.com/web/tools/lighthouse/audits/has-viewport-meta-tag" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+
+                    Content is sized correctly for the viewport
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        If the width of your app's content doesn't match the width of the viewport, your app might not be optimized for mobile screens. <a href="https://developers.google.com/web/tools/lighthouse/audits/content-sized-correctly-for-viewport" rel="noopener" target="_blank">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section class="js-breakdown aggregations" id="best-practices">
+        <header class="aggregations__header">
+          <h1>Best Practices</h1>
+          <p class="aggregations__desc">We&#x27;ve compiled some recommendations for modernizing your web app and avoiding performance pitfalls. These audits do not affect your score but are worth a look.</p>
+        </header>
+
+        <div class="js-report-by-user-feature">
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Using modern offline features</h2>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Offline:</strong>
+
+                    Site does not use Application Cache
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Application Cache has been <a href="https://html.spec.whatwg.org/multipage/browsers.html#offline" target="_blank">deprecated</a> by <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers" target="_blank">Service Workers</a>. Consider implementing an offline solution using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache" target="_blank">Cache Storage API</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Offline:</strong>
+
+                    Site does not use WebSQL DB.
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Web SQL is deprecated. Consider using IndexedDB instead. <a href="https://developers.google.com/web/tools/lighthouse/audits/web-sql" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Using modern protocols</h2>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Security:</strong>
+
+                    Site is on HTTPS
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        All sites should be protected with HTTPS, even ones that don't handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. <a href="https://developers.google.com/web/tools/lighthouse/audits/https" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Performance:</strong>
+
+                    Site uses HTTP/2 for its own resources
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        HTTP/2 offers many benefits over HTTP/1.1, including binary headers, multiplexing, and server push. <a href="https://developers.google.com/web/tools/lighthouse/audits/http2" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Using modern CSS features</h2>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">CSS:</strong>
+
+                    Site does not use the old CSS flexbox
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        The 2009 spec of Flexbox is deprecated and is 2.3x slower than the latest spec. <a href="https://developers.google.com/web/tools/lighthouse/audits/old-flexbox" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+                    <div class="subitem__debug">
+                      TypeError: Cannot read property 'toString' of undefined
+                    </div>
+
+                  <div class="subitem-result">
+                        <span class="subitem-result__points score-poor-bg">
+                          -1
+                        </span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Using modern JavaScript features</h2>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">JavaScript:</strong>
+
+                    Site uses passive listeners to improve scrolling performance
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Consider marking your touch and wheel event listeners as <code>passive</code> to improve your page's scroll performance. <a href="https://developers.google.com/web/tools/lighthouse/audits/passive-event-listeners" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">JavaScript:</strong>
+
+                    Site does not use Mutation Events in its own scripts
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Mutation Events are deprecated and harm performance. Consider using Mutation Observers instead. <a href="https://developers.google.com/web/tools/lighthouse/audits/mutation-events" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Avoiding APIs that harm the user experience</h2>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Performance:</strong>
+
+                    Site does not use document.write()
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        For users on slow connections, external scripts dynamically injected via <code>document.write()</code> can delay page load by tens of seconds. <a href="https://developers.google.com/web/tools/lighthouse/audits/document-write" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Performance:</strong>
+
+                    Site does not use &lt;link&gt; that delay first paint
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Link elements are blocking the first paint of your page. Consider inlining critical links and deferring non-critical ones. <a href="https://developers.google.com/web/tools/lighthouse/audits/blocking-resources" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Performance:</strong>
+
+                    Site does not use &lt;script&gt; in head that delays first paint
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Script elements are blocking the first paint of your page. Consider inlining critical scripts and deferring non-critical ones. <a href="https://developers.google.com/web/tools/lighthouse/audits/blocking-resources" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Performance:</strong>
+
+                    Site opens external anchors using rel&#x3D;&quot;noopener&quot;
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Open new tabs using <code>rel="noopener"</code> to improve performance and prevent security vulnerabilities. <a href="https://developers.google.com/web/tools/lighthouse/audits/noopener" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">UX:</strong>
+
+                    Page does not automatically request geolocation on page load
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to user gestures instead. <a href="https://developers.google.com/web/tools/lighthouse/audits/geolocation-on-load" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+                    <div class="subitem__debug">
+                      Unable to determine if this permission was requested on page load because it had already been set. Try resetting the permission and run Lighthouse again.
+                    </div>
+
+                  <div class="subitem-result">
+                        <span class="subitem-result__points score-poor-bg">
+                          -1
+                        </span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">UX:</strong>
+
+                    Page does not automatically request notification permissions on page load
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. <a href="https://developers.google.com/web/tools/lighthouse/audits/notifications-on-load" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Accessibility</h2>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Accessibility:</strong>
+
+                    Element aria-* roles are valid
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Accessibility:</strong>
+
+                    Elements with ARIA roles have the required aria-* attributes
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Accessibility:</strong>
+
+                    Element aria-* attributes are valid and not misspelled or non-existent.
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Accessibility:</strong>
+
+                    Element aria-* attributes have valid values
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Accessibility:</strong>
+
+                    Background and foreground colors have a sufficient contrast ratio
+
+
+                  </p>
+
+                    <div class="subitem__debug">
+                      Elements must have sufficient color contrast (Failed on 1 element)
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                    <details class="subitem__details">
+                      <summary class="subitem__detail">
+                          1 element fails this test
+                        <a href="https://dequeuniversity.com/rules/axe/2.1/color-contrast?application&#x3D;axeAPI" target="_blank"><small>learn more</small></a>
+                      </summary>
+                      <ul class="subitem__details">
+                        <li class="subitem__detail"><code>#reload-button</code></li>
+                      </ul>
+                    </details>
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Accessibility:</strong>
+
+                    Every image element has an alt attribute
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Accessibility:</strong>
+
+                    Every form element has a label
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Accessibility:</strong>
+
+                    No element has a tabindex attribute greater than 0
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>Other</h2>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Manifest:</strong>
+
+                    Manifest&#x27;s short_name won&#x27;t be truncated when displayed on homescreen
+
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Manifest:</strong>
+
+                    Manifest&#x27;s display property is set
+
+
+                  </p>
+
+                    <div class="subitem__debug">
+                      Manifest display property should be set.
+                    </div>
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                </li>
+                <li class="subitem --coming-soon --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">UX:</strong>
+
+                    Service worker makes use of push notifications, if appropriate
+
+                      <small class="subitem__tease">(Coming soon)</small>
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__unknown score-unknown-bg">N/A</span>
+                  </div>
+
+                </li>
+                <li class="subitem --coming-soon --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">UX:</strong>
+
+                    Tap targets are appropriately sized for touch
+
+                      <small class="subitem__tease">(Coming soon)</small>
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__unknown score-unknown-bg">N/A</span>
+                  </div>
+
+                </li>
+                <li class="subitem --coming-soon --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">UX:</strong>
+
+                    Payment forms marked up with [autocomplete] attributes
+
+                      <small class="subitem__tease">(Coming soon)</small>
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__unknown score-unknown-bg">N/A</span>
+                  </div>
+
+                </li>
+                <li class="subitem --coming-soon --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">UX:</strong>
+
+                    Login forms marked up with [autocomplete] attributes
+
+                      <small class="subitem__tease">(Coming soon)</small>
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__unknown score-unknown-bg">N/A</span>
+                  </div>
+
+                </li>
+                <li class="subitem --coming-soon --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">UX:</strong>
+
+                    Input fields use appropriate [type] attributes for custom keyboards
+
+                      <small class="subitem__tease">(Coming soon)</small>
+
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__unknown score-unknown-bg">N/A</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section class="js-breakdown aggregations" id="performance-metrics">
+        <header class="aggregations__header">
+          <h1>Performance Metrics</h1>
+          <p class="aggregations__desc">These encapsulate your app&#x27;s performance.</p>
+        </header>
+
+        <div class="js-report-by-user-feature">
+            <section class="aggregation">
+
+
+            <ul class="subitems">
+                <li class="subitem  --show-help">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Performance:</strong>
+
+                    Critical Request Chains<strong class="subitem__raw-value">: 2</strong>
+
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  checked>
+                      <span class="subitem__help">
+                        The Critical Request Chains below show you what resources are required for first render of this page. Improve page load by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources. <a href="https://developers.google.com/web/tools/lighthouse/audits/critical-request-chains" rel="noopener" target="_blank">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__poor score-poor-bg">Fail</span>
+                  </div>
+
+                    <style>
+                    .tree-marker {
+                      width: 12px;
+                      height: 26px;
+                      display: block;
+                      float: left;
+                      background-position: top left;
+                    }
+                    
+                    .horiz-down {
+                      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDE2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPmhvcml6LWRvd248L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iaG9yaXotZG93biIgZmlsbD0iI0Q4RDhEOCI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtMTM4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjAwMDAwMCwgMTMuMDAwMDAwKSByb3RhdGUoLTI3MC4wMDAwMDApIHRyYW5zbGF0ZSgtNy4wMDAwMDAsIC0xMy4wMDAwMDApICIgeD0iNiIgeT0iNCIgd2lkdGg9IjIiIGhlaWdodD0iMTgiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZS0xMzkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDguMDAwMDAwLCAxOS4wMDAwMDApIHJvdGF0ZSgtMjcwLjAwMDAwMCkgdHJhbnNsYXRlKC04LjAwMDAwMCwgLTE5LjAwMDAwMCkgIiB4PSIxIiB5PSIxOCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==');
+                    }
+                    
+                    .right {
+                      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDE2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPnJpZ2h0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9InJpZ2h0IiBmaWxsPSIjRDhEOEQ4Ij4KICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZS0xMzgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDguMDAwMDAwLCAxMy4wMDAwMDApIHJvdGF0ZSgtMjcwLjAwMDAwMCkgdHJhbnNsYXRlKC04LjAwMDAwMCwgLTEzLjAwMDAwMCkgIiB4PSI3IiB5PSI1IiB3aWR0aD0iMiIgaGVpZ2h0PSIxNiI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+');
+                    }
+                    
+                    .up-right {
+                      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDE2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPnVwLXJpZ2h0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9InVwLXJpZ2h0IiBmaWxsPSIjRDhEOEQ4Ij4KICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZS0xMzgiIHg9IjciIHk9IjAiIHdpZHRoPSIyIiBoZWlnaHQ9IjE0Ij48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtMTM5IiB4PSI5IiB5PSIxMiIgd2lkdGg9IjciIGhlaWdodD0iMiI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+');
+                    }
+                    
+                    .vert-right {
+                      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDE2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPnZlcnQtcmlnaHQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0idmVydC1yaWdodCIgZmlsbD0iI0Q4RDhEOCI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtMTM4IiB4PSI3IiB5PSIwIiB3aWR0aD0iMiIgaGVpZ2h0PSIyNyI+PC9yZWN0PgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLTEzOSIgeD0iOSIgeT0iMTIiIHdpZHRoPSI3IiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==');
+                    }
+                    
+                    .vert {
+                      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDE2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPnZlcnQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0idmVydCIgZmlsbD0iI0Q4RDhEOCI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtMTM4IiB4PSI3IiB5PSIwIiB3aWR0aD0iMiIgaGVpZ2h0PSIyNiI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+');
+                    }
+                    
+                    .space {
+                      background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjcuMiAoMjgyNzYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPmhvcml6LWRvd248L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iaG9yaXotZG93biI+PC9nPgogICAgPC9nPgo8L3N2Zz4=');
+                    }
+                    
+                    .cnc-tree {
+                      font-size: 14px;
+                      width: 100%;
+                      overflow-x: auto;
+                    }
+                    
+                    .cnc-node {
+                      height: 26px;
+                      line-height: 26px;
+                      white-space: nowrap;
+                    }
+                    
+                    .cnc-node__tree-value {
+                      margin-left: 10px;
+                    }
+                    
+                    .cnc-node__chain-duration {
+                      font-weight: bold;
+                    }
+                    
+                    .cnc-node__tree-hostname {
+                      color: #999;
+                    }
+                    
+                    </style>
+                    
+                    
+                    <ul class="subitem__details">
+                      <li class="subitem__detail">Longest request chain (shorter is better): <strong>1</strong></li>
+                      <li class="subitem__detail">Longest chain duration (shorter is better): <strong>268.04ms</strong></li>
+                      <li class="subitem__detail">Longest chain transfer size (smaller is better): <strong>0.00KB</strong></li>
+                      <li class="subitem__detail">
+                        <div>Initial navigation</div>
+                                <div class="cnc-node" title="49268.1">
+                                  <span class="cnc-node__tree-marker">
+                                    <span class="tree-marker vert-right"></span>
+                                    <span class="tree-marker right"></span>
+                              
+                                    <span class="tree-marker right"></span>
+                                  </span>
+                              
+                                  <span class="cnc-node__tree-value">
+                                      <span class="cnc-node__tree-file">/</span>
+                                      <span class="cnc-node__tree-hostname">(googlg.com)</span>
+                                      - <span class="cnc-node__chain-duration">24.43ms, 0.00KB</span>
+                                  </span>
+                                </div>
+                              
+                                <div class="cnc-node" title="49268.10">
+                                  <span class="cnc-node__tree-marker">
+                                    <span class="tree-marker up-right"></span>
+                                    <span class="tree-marker right"></span>
+                              
+                                    <span class="tree-marker right"></span>
+                                  </span>
+                              
+                                  <span class="cnc-node__tree-value">
+                                      <span class="cnc-node__tree-file">/</span>
+                                      <span class="cnc-node__tree-hostname">(googlg.com)</span>
+                                      - <span class="cnc-node__chain-duration">268.04ms, 0.00KB</span>
+                                  </span>
+                                </div>
+                              
+                      </li>
+                    </ul>
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">Performance:</strong>
+
+                    User Timing marks and measures<strong class="subitem__raw-value">: 0</strong>
+
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Consider instrumenting your app with the User Timing API to create custom, real-world measurements of key user experiences. <a href="https://developers.google.com/web/tools/lighthouse/audits/user-timing" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section class="js-breakdown aggregations" id="fancier-stuff">
+        <header class="aggregations__header">
+          <h1>Fancier stuff</h1>
+          <p class="aggregations__desc">A list of newer features that you could be using in your app. These audits do not affect your score and are just suggestions.</p>
+        </header>
+
+        <div class="js-report-by-user-feature">
+            <section class="aggregation">
+
+            <header class="aggregation__header">
+              <h2>New JavaScript features</h2>
+            </header>
+
+            <ul class="subitems">
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">JavaScript:</strong>
+
+                    Site does not use Date.now() in its own scripts
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Consider using <code>performance.now()</code> from the User Timing API instead. It provides high-precision timestamps, independent of the system clock. <a href="https://developers.google.com/web/tools/lighthouse/audits/date-now" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+                <li class="subitem  ">
+
+                  <p class="subitem__desc">
+                      <strong class="subitem__category">JavaScript:</strong>
+
+                    Site does not use console.time() in its own scripts
+
+
+                      <input type="checkbox" class="subitem__help-toggle" title="Toggle help text"  >
+                      <span class="subitem__help">
+                        Consider using <code>performance.mark()</code> and <code>performance.measure()</code> from the User Timing API instead. They provide high-precision timestamps, independent of the system clock, and are integrated in the Chrome DevTools Timeline. <a href="https://developers.google.com/web/tools/lighthouse/audits/console-time" target="_blank" rel="noopener">Learn more</a>.
+                      </span>
+                  </p>
+
+
+                  <div class="subitem-result">
+                          <span class="subitem-result__good score-good-bg">Pass</span>
+                  </div>
+
+                </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Generated by <b>Lighthouse</b> 1.3.1 on 12/23/2016, 1:27:18 PM GMT+9 | <a href="https://github.com/GoogleChrome/Lighthouse/issues" target="_blank">File an issue</a>
+    </footer>
+  </section>
+</div>

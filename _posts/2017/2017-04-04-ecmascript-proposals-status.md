@@ -11,21 +11,21 @@ tags:
 
 ---
 
-The changes of proposal's status @ [56th meeting of Ecma TC39](https://github.com/tc39/agendas/blob/master/2017/01.md)
+The changes of proposal's status @ [57th meeting of Ecma TC39](https://github.com/tc39/agendas/blob/master/2017/03.md "57th meeting of Ecma TC39")
 
-4 new proposals are arrived.
 
-| Proposal                                 | Stage       |
-| ---------------------------------------- | ----------- |
-| [Proposed Grammar change to ES Modules](https://github.com/bmeck/UnambiguousJavaScriptGrammar) | 0->Inactive |
-| [Null Propagation Operator](https://docs.google.com/presentation/d/11O_wIBBbZgE1bMVRJI8kGnmC6dWCBOwutbN9SWOK0fU/view#slide=id.g1c161255c9_0_50) | NaN->1      |
-| [Error Stacks](https://github.com/ljharb/proposal-error-stacks "Error Stacks") | NaN->1      |
-| [Math.signbit](http://jfbastien.github.io/papers/Math.signbit.html "Math.signbit") | NaN->1      |
-| [Realms API](https://github.com/tc39/proposal-realms "Realms API") | NaN->1      |
-| [do expression](https://gist.github.com/dherman/1c97dfb25179fa34a41b5fff040f9879) | 0->1        |
-| [RegExp Named Capture Groups](https://github.com/tc39/proposal-regexp-named-groups "RegExp Named Capture Groups") | 1->2        |
-| [Shared memory and atomics](https://github.com/tc39/ecmascript_sharedmem "Shared memory and atomics") | 3->ES2017   |
 
-Other proposal's staus 
+| Proposal                                 | Stage         |
+| ---------------------------------------- | ------------- |
+| [Temporal](https://github.com/maggiepint/proposal-temporal "Temporal") | NaN->1        |
+| [Arbitrary-precision Integers](https://github.com/tc39/proposal-integer) | 1->2          |
+| [`s` (`dotAll`) flag for regular expressions](https://github.com/mathiasbynens/es-regexp-dotall-flag) | 1->3          |
+| [RegExp Lookbehind Assertions](https://github.com/tc39/proposal-regexp-lookbehind) | 2->3          |
+| [RegExp Unicode Property Escapes](https://github.com/tc39/proposal-regexp-unicode-property-escapes) | 2->3          |
+| [RegExp named capture groups](https://github.com/tc39/proposal-regexp-named-groups) | 2->3          |
+| [Template Literals Revision](https://github.com/tc39/proposal-template-literal-revision "Template Literals Revision") | 3->4 (ES2018) |
+
+See also
 
 - [tc39/proposals: Tracking ECMAScript Proposals](https://github.com/tc39/proposals "tc39/proposals: Tracking ECMAScript Proposals")
+- [March 2017 meeting notes by leobalter · Pull Request #64 · rwaldron/tc39-notes](https://github.com/rwaldron/tc39-notes/pull/64 "March 2017 meeting notes by leobalter · Pull Request #64 · rwaldron/tc39-notes")

@@ -2,12 +2,13 @@
 title: "ECMAScript proposal updates @ 2017-03"
 author: azu
 layout: news
-date : '2017-04-040T10:00'
+date : '2017-04-040T09:00'
 category: ECMAScript
 tags:
     - ECMASript
     - Proposal
     - spec
+
 
 ---
 

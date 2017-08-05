@@ -16,6 +16,7 @@ The changes of proposal's status @ [59th meeting of Ecma TC39](https://github.co
 | Proposal                                 | Stage  |
 | ---------------------------------------- | ------ |
 | Change Number.parseInt/parseFloat to not coerce null/undefined/NaN(no repo) | NaN->1 |
+| [Binary AST][https://github.com/syg/ecmascript-binary-ast] | 0->1   |
 | [`Symbol.prototype.description`](https://github.com/michaelficarra/Symbol-description-proposal/) | 0->1   |
 | [Array.prototype.flat{Map,ten}](https://github.com/tc39/proposal-flatMap) | 0->1   |
 | [Throw expressions](https://github.com/rbuckton/proposal-throw-expressions) | 0->1   |

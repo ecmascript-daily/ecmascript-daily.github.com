@@ -1,6 +1,13 @@
 # ECMAScript Daily [![Build Status](https://travis-ci.org/ecmascript-daily/ecmascript-daily.github.com.svg?branch=master)](https://travis-ci.org/ecmascript-daily/ecmascript-daily.github.com)
 
-Daily news blog about ECMAScript.
+ECMAScript news blog.
+
+Update this blog when
+
+- Arrive TC39 Meetings notes
+- Update ECMAScript proposal
+- Change Spec
+- Post blog post about ECMAScript
 
 ## [Contributing](./CONTRIBUTING.md)
 

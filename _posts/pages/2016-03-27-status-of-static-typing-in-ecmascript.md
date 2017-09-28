@@ -21,6 +21,13 @@ tags:
 | NaN    | [Type and Type Annotations](https://github.com/tc39/tc39-notes/blob/master/es6/2014-09/sept-25.md#types "Type Annotations") | > Reserve syntax used by TypeScript, Flow, etc. for some form of annotation by [Jonathan Turner](https://github.com/jonathandturner)                                                | Jonathan Turner leave Microsoft. :link: [Off to new adventures](http://www.jonathanturner.org/2015/10/off-to-new-adventures.html "Off to new adventures")                                                                                        |
 | NaN    | [Optional Static Typing](https://github.com/sirisian/ecmascript-types "Optional Static Typing")                             | [@sirisian](https://github.com/sirisian "sirisian")'s proposal                                                                                                                      | Out of date?                                                                                                                                                                                                                                     |
 
+## Statement
+
+Brian Terlson who is editor of ECMAScript said that 
+
+> Speaking as someone who proposed types for JavaScript in 2014: I do not believe types are in the cards for the near future. This is an extremely complex problem to get right from a standards perspective. Just adopting TypeScript as the standard would of course be great for TypeScript users, but there are other typed JS supersets with pretty significant usage including closure compiler and flow. These tools all behave differently and it's not even clear that there's a common subset to work from (I don't think there is in any appreciable sense). I'm not entirely sure what a standard for types looks like, and I and others will continue to investigate this as it could be very beneficial, but don't expect anything near term.
+> -- https://hashnode.com/ama/with-brian-terlson-cj6vu9vjv01nmo1wu8vmtt1x9#cj6vuspfq01oso1wuhjo5zvd6
+
 ## Other Works
 
 - Microsoft develop [TypeScript](http://www.typescriptlang.org/ "TypeScript")

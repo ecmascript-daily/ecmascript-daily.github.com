@@ -45,7 +45,7 @@ Pursue [`export * as ns from "mod";` statements][export-ns-from] as a needs-cons
 
 ### Related service
 
-- [EcmaScript.in | Mirror of ES Spec updates](http://ecmascript.in/ "EcmaScript.in | Mirror of ES Spec updates")
+- [EcmaScript.in](http://ecmascript.in/)
 - [bevacqua/prop-tc39: Scraping microservice for TC39 proposals 😸](https://github.com/bevacqua/prop-tc39 "bevacqua/prop-tc39: Scraping microservice for TC39 proposals 😸")
 
 

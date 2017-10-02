@@ -25,7 +25,7 @@ The changes of proposal's status @ [60th meeting of Ecma TC39](https://github.co
 | [JSON superset][json-superset]           | 0 -> 1                                   |
 | [Nullary coalescing operator][nullary-coalescing] | 0 -> 1                                   |
 | [Partial application][partial-application] | 0 -> 1                                   |
-| [Array.prototype.flat{Map,ten}][flat]    | 1 - > 2                                  |
+| [Array.prototype.flat{Map,ten}][flat]    | 1 -> 2                                  |
 | [Throw expressions][throw-expressions]   | 1 -> 2                                   |
 | [`String#matchAll`][matchall]            | 1 -> 2                                   |
 | [`import.meta`][import-meta]             | 2 -> 3                                   |

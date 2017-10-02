@@ -35,7 +35,11 @@ The changes of proposal's status @ [60th meeting of Ecma TC39](https://github.co
 
 Pursue [`export * as ns from "mod";` statements][export-ns-from] as a needs-consensus PR at [July 27, 2017 Meeting Notes](http://tc39.github.io/tc39-notes/2017-07_jul-27.html#export-ns-from "July 27, 2017 Meeting Notes").
 
-### Other proposal's staus 
+### Babel
+
+- [Sept 2017 · Issue #28 · babel/proposals](https://github.com/babel/proposals/issues/28 "Sept 2017 · Issue #28 · babel/proposals")
+
+### Other proposal's status 
 
 - [tc39/proposals: Tracking ECMAScript Proposals](https://github.com/tc39/proposals "tc39/proposals: Tracking ECMAScript Proposals")
 

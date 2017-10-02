@@ -15,8 +15,6 @@ related:
       Add `export * as ns from &#34;mod”` updates. by jdalton · Pull Request
       #1005 · tc39/ecma262
     url: 'https://github.com/tc39/ecma262/pull/1005'
-  - title: Dummy
-    url: 'http://example.com/'
 ---
 `export * as ns from "mod"`: Stage 2 -> "needs consensus" PR.
 (Jump to spec.)

@@ -38,6 +38,7 @@ Pursue [`export * as ns from "mod";` statements][export-ns-from] as a needs-cons
 ### Babel
 
 - [Sept 2017 · Issue #28 · babel/proposals](https://github.com/babel/proposals/issues/28 "Sept 2017 · Issue #28 · babel/proposals")
+- [babel/proposals: Tracking the status of Babel's implementation of TC39 proposals](https://github.com/babel/proposals "babel/proposals: Tracking the status of Babel&#39;s implementation of TC39 proposals")
 
 ### Other proposal's status 
 

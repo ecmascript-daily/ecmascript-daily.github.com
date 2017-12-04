@@ -50,6 +50,8 @@ The changes of proposal's status @ [61st meeting of Ecma TC39](https://github.co
 > 
 > -- https://github.com/babel/proposals/issues/34#issuecomment-348354981
 
+Currently, `Class Public Instance Fields & Private Instance Fields & Methods` and `Class Static Fields (Public & Private)` refer to [same repository](https://github.com/tc39/proposal-class-fields).
+
 ### Babel
 
 - [Nov 2017 · Issue #34 · babel/proposals](https://github.com/babel/proposals/issues/34 "Nov 2017 · Issue #34 · babel/proposals")

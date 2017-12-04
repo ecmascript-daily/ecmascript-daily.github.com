@@ -34,8 +34,21 @@ The changes of proposal's status @ [61st meeting of Ecma TC39](https://github.co
 | [`Array.prototype.{flatMap,flatten}`](https://github.com/tc39/proposal-flatMap)         | 2     | 3     |
 | [Numeric separators](https://github.com/tc39/proposal-numeric-separator)                | 2     | 3     |
 | [Class Static Fields (Public & Private)](https://github.com/tc39/proposal-class-fields) | 3     | 2     |
+| [Class Public Instance Fields & Private Instance Fields & Methods](https://github.com/tc39/proposal-class-fields) | 3     | 3     |
 | [`Atomics.waitAsync`](https://github.com/tc39/proposal-atomics-wait-async)              | 1     | 2     |
 | [JSON superset](https://github.com/tc39/proposal-json-superset)                         | 1     | 2     |
+
+**Notes**
+
+[Class Static Fields (Public & Private)](https://github.com/tc39/proposal-class-fields): 3 to 2.
+
+> Class fields and private methods will be merged, and split.
+> 
+> Class instance fields (public and private), and private instance methods are now one proposal, and at Stage 3.
+>
+> Class static fields (public and private), and private static methods are now a second proposal, and at Stage 2.
+> 
+> -- https://github.com/babel/proposals/issues/34#issuecomment-348354981
 
 ### Babel
 

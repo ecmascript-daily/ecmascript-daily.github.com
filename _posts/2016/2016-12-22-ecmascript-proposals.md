@@ -5,7 +5,7 @@ layout: news
 date : '2016-12-22T10:49:14Z'
 category: ECMAScript
 tags:
-    - ECMASript
+    - ECMAScript
     - Proposal
 
 ---

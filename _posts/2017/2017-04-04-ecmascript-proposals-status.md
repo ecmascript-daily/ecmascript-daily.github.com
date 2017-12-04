@@ -5,7 +5,7 @@ layout: news
 date : 2017-04-04T09:13
 category: ECMAScript
 tags:
-- ECMASript
+- ECMAScript
 - Proposal
 - spec
 

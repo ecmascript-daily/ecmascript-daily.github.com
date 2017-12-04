@@ -18,7 +18,7 @@ The changes of proposal's status @ [61st meeting of Ecma TC39](https://github.co
 
 | Proposal                                                                                                             | Stage |
 | -------------------------------------------------------------------------------------------------------------------- | ----- |
-| [Nullish coalescing Operator](https://github.com/tc39/proposal-nullish-coalescing)                                   | 1     |
+| [Nullish coalescing Operator](https://github.com/tc39/proposal-nullish-coalescing)(Renamed)                          | 1     |
 | [`InterpreterDirective`](https://gist.github.com/bmeck/59cf8c16959eccffd8b7e9828826a842)                             | 1     |
 | [`String.prototype.replaceAll`](https://github.com/psmarshall/string-replace-all-proposal)                           | 1     |
 | [`String.prototype.codePoints`](https://github.com/RReverser/string-prototype-codepoints)                            | 1     |

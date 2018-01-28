@@ -43,7 +43,6 @@ The changes of proposal's status @ [62nd meeting of Ecma TC39](https://github.co
 | [`String.prototype.matchAll`](https://github.com/tc39/String.prototype.matchAll)                           | 2     | 3     |
 | [`Symbol.prototype.description`](https://github.com/tc39/proposal-Symbol-description)                      | 1     | 2     |
 | [Cancellation API](https://github.com/tc39/proposal-cancellation)                                          | 0     | 1     |
-| Annex B — HTML Attribute Event Handlers                                                                    | 1     | 0     |
 
 
 ## Notes

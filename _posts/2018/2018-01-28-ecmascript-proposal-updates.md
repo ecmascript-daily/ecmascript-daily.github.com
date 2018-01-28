@@ -44,6 +44,7 @@ The changes of proposal's status @ [62nd meeting of Ecma TC39](https://github.co
 
 ECMAScript 2018 feature set has been frozen.
 
+- [proposals/finished-proposals.md at master · tc39/proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md "proposals/finished-proposals.md at master · tc39/proposals")
 - [ECMAScript 2018: the final feature set](http://2ality.com/2017/02/ecmascript-2018.html "ECMAScript 2018: the final feature set")
 
 ### Babel

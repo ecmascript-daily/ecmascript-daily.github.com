@@ -1,6 +1,6 @@
 ---
 layout: news
-title: 1 day - 62nd meeting of Ecma TC39
+title: Day 2 - 62nd meeting of Ecma TC39
 item-url: 'https://github.com/tc39/agendas/blob/master/2018/01.md'
 date: '2018-01-24T15:18:52Z'
 tags:

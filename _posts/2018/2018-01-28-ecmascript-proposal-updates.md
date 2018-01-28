@@ -19,19 +19,16 @@ The changes of proposal's status @ [62nd meeting of Ecma TC39](https://github.co
 
 | Proposal                                                                                                                 | Stage |
 | ------------------------------------------------------------------------------------------------------------------------ | ----- |
-| [Static class fields and private static methods](http://github.com/tc39/proposal-static-class-features/)                 | 2     |
 | [`{BigInt,Number}.fromString`](https://github.com/mathiasbynens/proposal-number-fromstring)                              | 1     |
 | [`Math.seededRandoms()`](https://github.com/tabatkins/js-seeded-random)                                                  | 1     |
 | [`Function.prototype.toString()` censorship](https://github.com/domenic/proposal-function-prototype-tostring-censorship) | 1     |
 | [Top-level `await`](https://github.com/MylesBorins/proposal-top-level-await)                                             | 1     |
 | [Maximally minimal mixins](https://github.com/justinfagnani/proposal-mixins)                                             | 1     |
 
-
 ## Updated Proposals
 
 | Proposal                                                                                                   | From  | To    |
 | ---------------------------------------------------------------------------------------------------------- | ----- | ----- |
-| [`s` (`dotAll`) flag for regular expressions](https://github.com/tc39/proposal-regexp-dotall-flag)         | 3     | 4     |
 | [RegExp named capture groups](https://github.com/tc39/proposal-regexp-named-groups)                        | 3     | 4     |
 | [Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread)                              | 3     | 4     |
 | [RegExp Lookbehind Assertions](https://github.com/tc39/proposal-regexp-lookbehind)                         | 3     | 4     |
@@ -42,8 +39,6 @@ The changes of proposal's status @ [62nd meeting of Ecma TC39](https://github.co
 | [`String.prototype.{trimStart,trimEnd}`](https://github.com/sebmarkbage/ecmascript-string-left-right-trim) | 2     | 3     |
 | [`String.prototype.matchAll`](https://github.com/tc39/String.prototype.matchAll)                           | 2     | 3     |
 | [`Symbol.prototype.description`](https://github.com/tc39/proposal-Symbol-description)                      | 1     | 2     |
-| [Cancellation API](https://github.com/tc39/proposal-cancellation)                                          | 0     | 1     |
-
 
 ## Notes
 

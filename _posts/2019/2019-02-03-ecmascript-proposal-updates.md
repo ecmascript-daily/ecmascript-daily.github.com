@@ -2,7 +2,7 @@
 title: "[ES2019] ECMAScript proposal updates @ 2019-01"
 author: azu
 layout: news
-date : '2018-02-03T09:00'
+date : '2019-02-03T09:00'
 category: ECMAScript
 tags:
     - ECMAScript

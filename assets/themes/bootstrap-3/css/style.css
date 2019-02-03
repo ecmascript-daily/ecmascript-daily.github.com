@@ -920,4 +920,7 @@ h1, h2, h3, h4 {
   word-wrap: break-word;
   white-space: pre-wrap; }
 
+.pagination {
+    font-size: 1.3em;
+}
 /*# sourceMappingURL=style.css.map */

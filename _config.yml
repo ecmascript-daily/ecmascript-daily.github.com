@@ -14,6 +14,13 @@ exclude:
 
 highlighter: rouge
 
+plugins:
+  - jekyll-paginate
+  - jemoji
+  - jekyll-mentions
+  - jekyll-sitemap
+paginate: 20
+paginate_path: "/page/:num/"
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
@@ -36,6 +43,7 @@ twitter_username: EcmascriptDaily
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 
+url : https://ecmascript-daily.github.io
 production_url : https://ecmascript-daily.github.io
 future: true
 # Build settings
@@ -44,11 +52,6 @@ markdown: kramdown
 kramdown:
    input: GFM
    hard_wrap: false
-
-gems:
-  - jemoji
-  - jekyll-mentions
-  - jekyll-sitemap
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

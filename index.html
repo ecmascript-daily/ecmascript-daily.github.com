@@ -24,7 +24,7 @@ tagline: ECMAScript Daily News
     <!--End mc_embed_signup-->
 </div>
 <div class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <article class="post-article">
         <div class="post-article-meta">
             <i class="glyphicon glyphicon-time"></i><span class="post-article-meta-date">{{ post.date | date_to_string }}</span>
@@ -34,4 +34,22 @@ tagline: ECMAScript Daily News
         </div>
     </article>
     {% endfor %}
+</div>
+<!-- Pagination links -->
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+        Previous
+    </a>
+    {% else %}
+    <span class="previous">Prev</span>
+    {% endif %}
+    <span class="page_number">
+        {{ paginator.page }} / {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+    <span class="next">Next</span>
+    {% endif %}
 </div>

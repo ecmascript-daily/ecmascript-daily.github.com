@@ -15,11 +15,6 @@ tags:
 
 The changes of proposal's status @ [69th meeting of Ecma TC39](https://github.com/tc39/agendas/blob/master/2019/03.md)
 
-See also 
-
-- [proposals/finished-proposals.md at master · tc39/proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
-- [ECMAScript 2019: the final feature set](http://2ality.com/2018/02/ecmascript-2019.html)
-
 ## New Proposals
 
 | Proposal                                                                                             | Stage |

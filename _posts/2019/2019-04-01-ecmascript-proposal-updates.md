@@ -1,5 +1,5 @@
 ---
-title: "[ES2019] ECMAScript proposal updates @ 2019-03"
+title: "ECMAScript proposal updates @ 2019-03"
 author: azu
 layout: news
 date : '2019-04-01T09:00'
@@ -8,6 +8,7 @@ tags:
     - ECMAScript
     - Proposal
     - spec
+    - TC39
 
 
 ---

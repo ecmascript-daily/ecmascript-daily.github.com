@@ -35,7 +35,6 @@ The changes of proposal's status @ [72th meeting of Ecma TC39](https://github.co
 
 | Proposal                                                                            | From  | To    |
 | ----------------------------------------------------------------------------------- | ----- | ----- |
-| [`BigInt`](https://github.com/tc39/proposal-bigint)                                 | 3     | 4     |
 | [`globalThis`](https://github.com/tc39/proposal-global)                             | 3     | 4     |
 | [`for-in` mechanics](https://github.com/bakkot/for-in-exploration)                  | 2     | 3     |
 | [`String.prototype.replaceAll`](https://github.com/tc39/proposal-string-replaceall) | 2     | 3     |

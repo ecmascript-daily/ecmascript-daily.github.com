@@ -8,4 +8,5 @@ tags:
   - spec
 ---
 ECMAScript Archives Page。
-ECMAScriptのT39MTGのアーカイブ、ES1からES2015まで
+
+1996 ~ 2015.

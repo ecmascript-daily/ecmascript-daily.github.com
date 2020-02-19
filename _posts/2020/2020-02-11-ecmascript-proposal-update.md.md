@@ -20,7 +20,6 @@ The changes of proposal's status @ [74th meeting of Ecma TC39][Agendas]
 
 | Proposal                                                                                                                                    | Stage |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| [RegExp Match Indices](https://github.com/tc39/proposal-regexp-match-Indices)                                                               | 3     |
 | [Async initialization](https://docs.google.com/presentation/d/1DsjZAzBjn2gCrr4l0uZzCymPIWZTKM8KzcnMBF31HAg/edit#slide=id.g7d23d45064_0_196) | 1     |
 | [Preserve Host Virtualizability](https://github.com/Agoric/proposal-preserve-virtualizability)                                              | 1     |
 | [Legacy reflection features for functions in JavaScript](https://github.com/claudepache/es-legacy-function-reflection)                      | 1     |

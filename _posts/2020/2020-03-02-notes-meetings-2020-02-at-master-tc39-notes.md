@@ -8,3 +8,5 @@ tags:
   - discussion
 ---
 TC39 Meeting Notes @ 2020-02
+
+Related: [2020-02 の TC39 meeting - moriken's project](https://scrapbox.io/petamoriken/2020-02_%E3%81%AE_TC39_meeting) (ja)

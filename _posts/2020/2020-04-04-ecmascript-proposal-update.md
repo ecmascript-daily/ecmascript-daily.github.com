@@ -17,8 +17,6 @@ The changes of proposal's status @ [75th meeting of Ecma TC39][Agendas]
 
 ## New Proposals
 
-## New Proposals
-
 | Proposal                                                                                                    | Stage |
 | ----------------------------------------------------------------------------------------------------------- | ----- |
 | [Array filtering](https://github.com/tc39/proposal-array-filtering)                                         | 1     |
@@ -36,7 +34,6 @@ The changes of proposal's status @ [75th meeting of Ecma TC39][Agendas]
 | [`import.meta`](https://github.com/tc39/proposal-import-meta)                                        | 3     | 4     |
 | [Logical Assignment Operators](https://github.com/tc39/proposal-logical-assignment)                  | 2     | 3     |
 | [Ergonomic brand checks for Private Fields](https://github.com/ljharb/proposal-private-fields-in-in) | 0     | 1     |
-
 
 :memo: Note This updated is included in ECMAScript 2020.
 

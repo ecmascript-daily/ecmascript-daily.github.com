@@ -17,29 +17,26 @@ The changes of proposal's status @ [75th meeting of Ecma TC39][Agendas]
 
 ## New Proposals
 
-| Proposal                                                                                                                                    | Stage |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| [Array filtering](https://github.com/tc39/proposal-array-filtering)                                                                         | 1     |
-| [Async initialization](https://docs.google.com/presentation/d/1DsjZAzBjn2gCrr4l0uZzCymPIWZTKM8KzcnMBF31HAg/edit#slide=id.g7d23d45064_0_196) | 1     |
-| [Preserve Host Virtualizability](https://github.com/Agoric/proposal-preserve-virtualizability)                                              | 1     |
-| [Legacy reflection features for functions in JavaScript](https://github.com/claudepache/es-legacy-function-reflection)                      | 1     |
-| [Cryptographically Secure Random Number Generation](https://github.com/rbuckton/proposal-csprng)                                            | 1     |
-| [ArrayBuffer view stride argument](https://github.com/surma/arraybufferview-stride-proposal)                                                | 1     |
-| [Number.range & BigInt.range](https://github.com/Jack-Works/proposal-Number.range)                                                          | 1     |
-| [Ergonomic brand checks for Private Fields](https://github.com/ljharb/proposal-private-fields-in-in)                                        | 1     |
-| [Compartments](https://github.com/bmeck/proposal-compartments)                                                                              | 1     |
-| [RefCollection](https://github.com/rricard/proposal-refcollection/)                                                                         | 0     |
-| [Deep Path Properties for Records](https://github.com/rickbutton/proposal-deep-path-properties-for-record/)                                 | 0     |
-| [Conflict comments](https://github.com/jugglinmike/proposal-conflict-comment)                                                               | 0     |
+## New Proposals
+
+| Proposal                                                                                                    | Stage |
+| ----------------------------------------------------------------------------------------------------------- | ----- |
+| [Array filtering](https://github.com/tc39/proposal-array-filtering)                                         | 1     |
+| [Number.range & BigInt.range](https://github.com/Jack-Works/proposal-Number.range)                          | 1     |
+| [Compartments](https://github.com/bmeck/proposal-compartments)                                              | 1     |
+| [RefCollection](https://github.com/rricard/proposal-refcollection/)                                         | 0     |
+| [Deep Path Properties for Records](https://github.com/rickbutton/proposal-deep-path-properties-for-record/) | 0     |
+| [Conflict comments](https://github.com/jugglinmike/proposal-conflict-comment)                               | 0     |
 
 
 ## Updated Proposals
 
-| Proposal                                                                            | From  | To    |
-| ----------------------------------------------------------------------------------- | ----- | ----- |
-| [`import.meta`](https://github.com/tc39/proposal-import-meta)                       | 3     | 4     |
-| [Logical Assignment Operators](https://github.com/tc39/proposal-logical-assignment) | 1     | 3     |
-| [Decimal](https://github.com/littledan/proposal-decimal)                            | 0     | 1     |
+| Proposal                                                                                             | From  | To    |
+| ---------------------------------------------------------------------------------------------------- | ----- | ----- |
+| [`import.meta`](https://github.com/tc39/proposal-import-meta)                                        | 3     | 4     |
+| [Logical Assignment Operators](https://github.com/tc39/proposal-logical-assignment)                  | 2     | 3     |
+| [Ergonomic brand checks for Private Fields](https://github.com/ljharb/proposal-private-fields-in-in) | 0     | 1     |
+
 
 :memo: Note This updated is included in ECMAScript 2020.
 

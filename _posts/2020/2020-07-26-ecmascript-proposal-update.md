@@ -22,7 +22,7 @@ The changes of proposal's status @ [77th meeting of Ecma TC39][Agendas]
 | ---------------------------------------------------------------------------------------------------------- | ----- |
 | [Import Conditions](https://github.com/tc39/proposal-import-conditions)                                    | 2     |
 | [WeakRefs `cleanupSome`](https://github.com/codehag/proposal-cleanup-some)                                 | 2     |
-| JSON Modules                                                                                               | 2     |
+| JSON Modules - [Note](https://github.com/tc39/proposal-import-assertions/issues/86)                        | 2     |
 | [await operations](https://github.com/Jack-Works/proposal-await.ops)                                       | 1     |
 | [`Array.prototype.unique()`](https://github.com/TechQuery/array-unique-proposal)                           | 1     |
 | [ResizableArrayBuffer and GrowableSharedArrayBuffer](https://github.com/syg/proposal-resizablearraybuffer) | 1     |

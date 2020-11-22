@@ -7,4 +7,6 @@ tags:
   - ECMAScript
   - proposal
 ---
-Extensions and `::` operator is newer proposal of `:` bind operator proposal.
+Extensions and `::` operator is newer proposal of `::` bind operator proposal.
+
+- https://github.com/tc39/proposal-bind-operator/issues/56

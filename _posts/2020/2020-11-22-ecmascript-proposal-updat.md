@@ -2,7 +2,7 @@
 title: "ECMAScript proposal updates @ 2020-11"
 author: azu
 layout: news
-date : '2020-11-2209:00'
+date : '2020-11-22T12:23:37Z'
 category: ECMAScript
 tags:
     - ECMAScript

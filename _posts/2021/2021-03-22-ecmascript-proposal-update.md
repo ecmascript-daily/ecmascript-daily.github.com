@@ -16,6 +16,7 @@ tags:
 The changes of proposal's status @ [81th meeting of Ecma TC39][Agendas]
 
 ## New Proposals
+
 | Proposal                                                                                                                  | Stage |
 | ------------------------------------------------------------------------------------------------------------------------- | ----- |
 | [Array find from last](https://github.com/tc39/proposal-array-find-from-last)                                             | 2     |

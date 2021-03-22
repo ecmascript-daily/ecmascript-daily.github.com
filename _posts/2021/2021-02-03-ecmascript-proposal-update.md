@@ -18,7 +18,8 @@ The changes of proposal's status @ [80th meeting of Ecma TC39][Agendas]
 
 ## New Proposals
 
-| Proposal                                                                                                                           | Stage |
+
+| Proposal| Stage |
 | ---------------------------------------------------------------------------------------------------------------------------------- | ----- |
 | [`async do` expressions](https://github.com/bakkot/proposal-async-do-expressions)                                                  | 1     |
 | [Class Brand Checks](https://github.com/hax/proposal-class-brand-check)                                                            | 1     |

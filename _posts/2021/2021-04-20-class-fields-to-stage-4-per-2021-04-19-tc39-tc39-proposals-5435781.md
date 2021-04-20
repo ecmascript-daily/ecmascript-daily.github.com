@@ -9,4 +9,4 @@ tags:
   - proposal
 ---
 Class Fields to Stage 4.
-= ES2020
+= ES2022

@@ -8,4 +8,4 @@ tags:
   - ECMAScript
   - news
 ---
-EMCAScript 2021 is released
+ECMAScript 2021 is released!

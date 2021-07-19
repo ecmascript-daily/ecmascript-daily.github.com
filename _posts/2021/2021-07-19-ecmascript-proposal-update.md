@@ -33,6 +33,14 @@ The changes of proposal's status @ [84th meeting of Ecma TC39][Agendas]
 | [Array find from last](https://github.com/tc39/proposal-array-find-from-last)                      | 2     | 3     |
 | [Realms](https://github.com/tc39/proposal-realms)                                                  | 2     | 3     |
 
+## Note
+
+Array Filtering for Stage 2 has been split into 2 proposals:
+
+- [tc39/proposal-array-filtering: A proposal to make filtering arrays easier](https://github.com/tc39/proposal-array-filtering)
+- [tc39/proposal-array-grouping: A proposal to make grouping of array items easier](https://github.com/tc39/proposal-array-grouping)
+- Slide: https://docs.google.com/presentation/d/1fY_jsD8bVZ8P95Mr7cEr3WdCbhMLdEQ7OS5hhLCbfJ4/edit#slide=id.gc6f73a04f_0_0
+
 
 # ECMA-402
 

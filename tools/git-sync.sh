@@ -15,15 +15,15 @@ else
   git stash pop
   if [ -n "${commitMessage}" ]; then
     git add .
-    git commit -m "${commitMessage}"
+    git commit -m "${commitMessage}" --no-verify
     git push
   fi
 fi
 
 if [[ -z $(git status --porcelain) ]];then
-  type /usr/local/bin/terminal-notifier >/dev/null 2>&1 && /usr/local/bin/terminal-notifier -message "Sync!!" -title "es-daily"
+  type /opt/homebrew/bin/terminal-notifier >/dev/null 2>&1 && /opt/homebrew/bin/terminal-notifier -message "Sync!!" -title "es-daily"
   exit 0;
 else
-  type /usr/local/bin/terminal-notifier >/dev/null 2>&1 && /usr/local/bin/terminal-notifier -message "Error!!" -title "es-daily"
+  type /opt/homebrew/bin/terminal-notifier >/dev/null 2>&1 && /opt/homebrew/bin/terminal-notifier -message "Error!!" -title "es-daily"
   exit 1;
 fi

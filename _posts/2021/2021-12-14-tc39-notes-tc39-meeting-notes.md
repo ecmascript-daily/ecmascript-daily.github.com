@@ -2,7 +2,7 @@
 layout: news
 title: 'tc39/notes: TC39 meeting notes'
 item-url: 'https://github.com/tc39/notes'
-date: '2021-12-14T23:24:23Z'
+date: '2021-12-14T23:29:47Z'
 tags:
   - ECMAScript
   - Meeting

@@ -7,4 +7,4 @@ tags:
   - ECMAScript
   - proposal
 ---
-ECMAScript Proposal for prevent prototype pollution via `Symbol.proto`.
+ECMAScript Proposal to prevent prototype pollution via `Symbol.proto`.

@@ -29,10 +29,17 @@ The changes of proposal's status @ [94th meeting of Ecma TC39][Agendas]
 | ----------------------------------------------------------------------------------- | ----- | ----- |
 | [Symbol Predicates](https://github.com/tc39/proposal-symbol-predicates)             | 1     | 2     |
 | [ArrayBuffer transfer](https://github.com/tc39/proposal-arraybuffer-transfer)       | 2     | 3     |
-| [Async Context](https://github.com/legendecas/proposal-async-context)               | 0     | 1     |
+| [Async Context](https://github.com/tc39/proposal-async-context)                     | 0     | 1     |
+| [Import Assertions](https://github.com/tc39/proposal-import-assertions)             | 3     | 2     |
 | [Change Array by Copy](https://github.com/tc39/proposal-change-array-by-copy)       | 3     | 4     |
 | [Symbols as WeakMap keys](https://github.com/tc39/proposal-symbols-as-weakmap-keys) | 3     | 4     |
 
+
+Current Import Assertions has a problem.
+As a result, step down to Stage 2.
+
+- <https://github.com/babel/proposals/issues/86#issuecomment-1414094515>
+- [Problems with import assertions for module types and a possible general solution](https://gist.github.com/peetklecha/a55532165dbd4905aa91bbe59e8b1001)
 
 # ECMA-402
 

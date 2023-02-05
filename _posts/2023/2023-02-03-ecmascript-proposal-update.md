@@ -15,25 +15,26 @@ tags:
 The changes of proposal's status @ [94th meeting of Ecma TC39][Agendas]
 
 # ECMA-262
-
 ## New Proposals
 
 | Proposal                                                                       | Stage |
 | ------------------------------------------------------------------------------ | ----- |
 | [Prototype pollution mitigation](https://github.com/syg/proposal-symbol-proto) | 1     |
+| [Async Iterator helpers](https://github.com/tc39/proposal-async-iterator-helpers)                               | 2     |
 
 
 ## Updated Proposals
 
 | Proposal                                                                            | From  | To    |
 | ----------------------------------------------------------------------------------- | ----- | ----- |
-| [Symbol Predicates](https://github.com/tc39/proposal-symbol-predicates)             | 1     | 2     |
-| [ArrayBuffer transfer](https://github.com/tc39/proposal-arraybuffer-transfer)       | 2     | 3     |
 | [Async Context](https://github.com/tc39/proposal-async-context)                     | 0     | 1     |
 | [Import Assertions](https://github.com/tc39/proposal-import-assertions)             | 3     | 2     |
+| [Symbol Predicates](https://github.com/tc39/proposal-symbol-predicates)             | 1     | 2     |
+| [ArrayBuffer transfer](https://github.com/tc39/proposal-arraybuffer-transfer)       | 2     | 3     |
 | [Change Array by Copy](https://github.com/tc39/proposal-change-array-by-copy)       | 3     | 4     |
 | [Symbols as WeakMap keys](https://github.com/tc39/proposal-symbols-as-weakmap-keys) | 3     | 4     |
 
+iterator-helpers proposal split out sync and async.
 
 Current Import Assertions has a problem.
 As a result, step down to Stage 2.

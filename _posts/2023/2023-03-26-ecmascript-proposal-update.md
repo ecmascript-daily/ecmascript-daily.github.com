@@ -27,7 +27,7 @@ The changes of proposal's status @ [95th meeting of Ecma TC39][Agendas]
 | [Class Method Parameter Decorators](https://github.com/tc39/proposal-class-method-parameter-decorators) | 1     |
 | [Time Zone Canonicalization](https://github.com/justingrant/proposal-canonical-tz)                      | 1     |
 
-📝 [Import Attributes](https://github.com/tc39/proposal-import-attributes) and [Async Explicit Resource Management](https://github.com/tc39/proposal-async-explicit-resource-management) near Stage 3,
+📝 [Import Attributes](https://github.com/tc39/proposal-import-attributes) and [Async Explicit Resource Management](https://github.com/tc39/proposal-async-explicit-resource-management) is almost Stage 3,
 according to [March 2023 · Issue #87 · babel/proposals](https://github.com/babel/proposals/issues/87)
 
 

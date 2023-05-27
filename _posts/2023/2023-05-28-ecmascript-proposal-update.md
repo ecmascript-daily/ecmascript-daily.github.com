@@ -2,7 +2,7 @@
 title: "ECMAScript proposal updates @ 2023-05"
 author: azu
 layout: news
-date : 2023-05-27T22:25:06.356Z
+date : 2023-05-27T22:30:06.356Z
 category: ECMAScript
 tags:
     - ECMAScript

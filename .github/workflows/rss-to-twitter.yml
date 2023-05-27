@@ -5,7 +5,7 @@ jobs:
   twitter:
     runs-on: ubuntu-latest
     steps:
-      - uses: azu/rss-to-twitter@v0.1
+      - uses: azu/rss-to-twitter@v1
         with:
           RSS_URL: "https://ecmascript-daily.github.io/atom.xml"
           TWEET_TEMPLATE: 'New Post: "%title%" %url% %desc%'

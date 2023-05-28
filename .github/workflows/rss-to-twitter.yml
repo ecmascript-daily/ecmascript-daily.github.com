@@ -3,6 +3,8 @@ on:
   page_build
 jobs:
   twitter:
+    # if github.event.build.error.message is not null, it means that the build failed. Skip it
+    if: ${{ github.event.build.error.message == null }}
     runs-on: ubuntu-latest
     steps:
       - uses: azu/rss-to-twitter@v1

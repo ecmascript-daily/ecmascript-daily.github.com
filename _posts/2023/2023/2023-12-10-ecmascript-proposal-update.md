@@ -31,6 +31,14 @@ The changes of proposal's status @ [99th meeting of Ecma TC39][Agendas]
 | [Array Grouping](https://github.com/tc39/proposal-array-grouping)                | 3     | 4     |
 | [Promise.withResolvers](https://github.com/tc39/proposal-promise-with-resolvers) | 3     | 4     |
 
+## Withdraw Proposals
+
+- [tc39/proposal-extended-numeric-literals: Extensible numeric literals for JavaScript](https://github.com/tc39/proposal-extended-numeric-literals)
+  - [Withdrawing custom numeric literal suffixes - Google スライド](https://docs.google.com/presentation/d/1me-RkloXmBJhDJKG3rl_q0CYW2KO_QFnvIPmIRmQhsw/edit#slide=id.p)
+- [tc39/proposal-operator-overloading](https://github.com/tc39/proposal-operator-overloading)
+  - [Withdrawing user-defined operator overloading - Google スライド](https://docs.google.com/presentation/d/1mT2VmZlC3YmhDsqdxrCxQ5GpLFHFntsb3XCM762eDvg/edit#slide=id.p)
+
+
 
 # ECMA-402
 

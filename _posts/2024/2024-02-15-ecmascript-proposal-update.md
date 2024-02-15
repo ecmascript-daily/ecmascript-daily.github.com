@@ -1,5 +1,5 @@
 ---
-title: "ECMAScript proposal updates @ XXXX-XX"
+title: "ECMAScript proposal updates @ 2024-02"
 author: azu
 layout: news
 date : 2024-02-15T01:57:29.454Z

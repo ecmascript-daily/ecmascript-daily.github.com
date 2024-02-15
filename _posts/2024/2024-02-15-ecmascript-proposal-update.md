@@ -33,6 +33,8 @@ The changes of proposal's status @ [100th meeting of Ecma TC39][Agendas]
 
 ## Updated Proposals
 
+🆕 Stage 2.7 is introduced in [add a new testing stage by michaelficarra · Pull Request #37 · tc39/process-document](https://github.com/tc39/process-document/pull/37)
+
 | Proposal                                                                         | From  | To    |
 | -------------------------------------------------------------------------------- | ----- | ----- |
 | [ShadowRealm](https://github.com/tc39/proposal-shadowrealm)                      | 3     | 2.7   |

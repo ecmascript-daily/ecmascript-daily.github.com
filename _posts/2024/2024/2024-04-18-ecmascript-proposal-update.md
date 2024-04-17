@@ -1,5 +1,5 @@
 ---
-title: "ECMAScript proposal updates @ XXXX-XX"
+title: "ECMAScript proposal updates @ 2024-04"
 author: azu
 layout: news
 date : 2024-04-17T23:23:28.962Z
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-The changes of proposal's status @ [82th meeting of Ecma TC39][Agendas]
+The changes of proposal's status @ [101st meeting of Ecma TC39][Agendas]
 
 
 # ECMA-262

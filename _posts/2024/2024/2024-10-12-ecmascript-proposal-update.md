@@ -12,7 +12,7 @@ tags:
 
 ---
 
-The changes of proposal's status @ [104thj meeting of Ecma TC39][Agendas]
+The changes of proposal's status @ [104th meeting of Ecma TC39][Agendas]
 
 # ECMA-262
 

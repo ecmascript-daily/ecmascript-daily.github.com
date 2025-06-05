@@ -32,7 +32,6 @@ The changes of proposal's status @ [108th meeting of Ecma TC39][Agendas]
 | [SeededPRNG](https://github.com/tc39/proposal-seeded-random)                               | 1     | 2         |
 | [Math.clamp](https://github.com/tc39/proposal-math-clamp)                                  | 1     | 2         |
 | [Error.isError](https://github.com/tc39/proposal-is-error)                                 | 3     | 4         |
-| [ArrayBuffer.prototype.transfer](https://github.com/domenic/proposal-arraybuffer-transfer) | 4     | withdrawn |
 
 
 # ECMA-402
